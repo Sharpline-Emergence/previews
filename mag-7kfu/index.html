@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>MAG Roofing — Mission, BC</title>
+<link rel="preload" as="image" href="hero-560.webp" fetchpriority="high">
+<style>
+  :root{
+    --ink:#151511; --muted:#5c5c55; --accent:#e0a800; --accent2:#f7c60a;
+    --black:#101010; --black2:#1a1a17; --card:#1c1c18; --row:#26261f; --track:#33332a;
+    --bg:#faf7ef; --sub:#c9c6ba; --line:#e9e4d6;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,Roboto,Arial,sans-serif; color:var(--ink); background:#fff; line-height:1.5;}
+  img{display:block; max-width:100%;}
+  a{color:inherit;}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 24px;}
+  .banner{background:#fff4d6; color:#5b4a17; font-size:13px; text-align:center; padding:10px 16px; line-height:1.5;}
+  .banner b{color:#3a2f0d;}
+
+  header.site{background:#fff; border-bottom:1px solid var(--line); position:sticky; top:0; z-index:40;}
+  header.site .wrap{display:flex; align-items:center; justify-content:space-between; gap:24px; padding-top:12px; padding-bottom:12px;}
+  .brand img{height:40px; width:auto;}
+  nav.links{display:flex; gap:28px; font-size:15px; font-weight:700;}
+  nav.links a{color:var(--ink); text-decoration:none;}
+  .call-pill{background:var(--black); color:var(--accent2); padding:11px 20px; border-radius:999px; font-weight:800; font-size:15px; text-decoration:none; white-space:nowrap;}
+  @media (max-width:860px){ nav.links{display:none;} }
+
+  .hero{background:linear-gradient(160deg,var(--black),var(--black2) 70%); color:#fff; padding:56px 0 60px;}
+  .hero .wrap{display:grid; grid-template-columns:1.1fr 1fr; gap:48px; align-items:center;}
+  .badge-row{display:flex; align-items:center; gap:8px; font-size:14px; font-weight:700; color:var(--sub); margin-bottom:18px;}
+  .stars{color:var(--accent2); letter-spacing:1px;}
+  h1{font-size:42px; line-height:1.15; font-weight:800; letter-spacing:-.5px;}
+  h1 .accent{color:var(--accent2);}
+  .hero p.lead{margin-top:18px; font-size:17px; color:#d9d6c8; max-width:52ch;}
+  .hero-cta{display:flex; gap:14px; margin-top:28px; flex-wrap:wrap;}
+  .btn-primary{background:var(--accent2); color:#181400; padding:15px 26px; border-radius:999px; font-weight:800; font-size:15px; text-decoration:none; display:inline-flex; align-items:center; gap:8px;}
+  .btn-outline{border:2px solid rgba(255,255,255,.4); color:#fff; padding:13px 24px; border-radius:999px; font-weight:700; font-size:15px; text-decoration:none;}
+  .hero-photo{position:relative;}
+  .hero-photo img{width:100%; height:auto; border-radius:18px; box-shadow:0 30px 60px rgba(0,0,0,.5);}
+  .float-card{position:absolute; left:-18px; bottom:-22px; background:#fff; color:var(--ink); border-radius:14px; padding:14px 18px; box-shadow:0 16px 30px rgba(0,0,0,.25); min-width:170px;}
+  .float-card .stars{color:var(--accent); font-size:14px;}
+  .float-card strong{display:block; font-size:17px; margin-top:4px;}
+  .float-card span{font-size:12px; color:var(--muted);}
+  @media (max-width:860px){
+    .hero .wrap{grid-template-columns:1fr;}
+    h1{font-size:32px;}
+    .float-card{left:14px; bottom:-18px;}
+  }
+
+  .trust{background:#fff; border-bottom:1px solid var(--line);}
+  .trust .wrap{display:grid; grid-template-columns:repeat(4,1fr); gap:18px; padding:30px 24px; text-align:center;}
+  .trust .num{font-size:24px; font-weight:800; color:var(--ink);}
+  .trust .lbl{font-size:13px; color:var(--muted); margin-top:2px;}
+  @media (max-width:700px){ .trust .wrap{grid-template-columns:repeat(2,1fr);} }
+
+  section{padding:64px 0;}
+  .eyebrow{color:#a9820a; font-weight:800; font-size:13px; letter-spacing:1.2px; text-transform:uppercase;}
+  h2{font-size:32px; font-weight:800; margin-top:8px; letter-spacing:-.3px;}
+  .sec-sub{color:var(--muted); font-size:16px; margin-top:10px; max-width:60ch;}
+
+  .why-sec{background:var(--black); color:#fff;}
+  .why-sec .eyebrow{color:var(--accent2);}
+  .why-sec .wrap{display:grid; grid-template-columns:0.9fr 1.1fr; gap:44px; align-items:center;}
+  .why-photo{position:relative;}
+  .why-photo img{border-radius:16px; width:100%; height:auto;}
+  .why-badge{position:absolute; left:18px; bottom:18px; background:rgba(16,16,16,.85); border:1px solid rgba(255,255,255,.15); border-radius:12px; padding:12px 16px;}
+  .why-badge b{color:var(--accent2); font-size:22px; display:block;}
+  .why-badge span{font-size:12.5px; color:var(--sub);}
+  .why-list{margin-top:26px; display:flex; flex-direction:column; gap:14px;}
+  .why-item{background:var(--card); border:1px solid #2b2b24; border-radius:14px; padding:18px 20px;}
+  .why-item b{display:block; font-size:16px; margin-bottom:4px;}
+  .why-item p{color:var(--sub); font-size:14px;}
+  @media (max-width:860px){ .why-sec .wrap{grid-template-columns:1fr;} }
+
+  .work-sec{background:var(--bg);}
+  .work-grid{display:grid; grid-template-columns:1.3fr 1fr; grid-template-rows:1fr 1fr; gap:18px; margin-top:38px;}
+  .work-grid .big{grid-row:1/3;}
+  .work-card{position:relative; border-radius:16px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,.08);}
+  .work-card img{width:100%; height:100%; object-fit:cover; display:block;}
+  .work-card .cap{position:absolute; left:0; right:0; bottom:0; padding:18px 20px; background:linear-gradient(0deg,rgba(0,0,0,.75),transparent);}
+  .work-card .cap .tag{color:var(--accent2); font-weight:800; font-size:11.5px; letter-spacing:1px; text-transform:uppercase;}
+  .work-card .cap .ttl{color:#fff; font-weight:800; font-size:18px; margin-top:2px;}
+  @media (max-width:860px){ .work-grid{grid-template-columns:1fr; grid-template-rows:none;} .work-grid .big{grid-row:auto;} }
+
+  .cred-sec{background:#fff;}
+  .cred-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:36px;}
+  .cred{background:var(--bg); border:1px solid var(--line); border-radius:14px; padding:20px;}
+  .cred b{display:block; font-size:15.5px; margin-bottom:4px;}
+  .cred span{font-size:13px; color:var(--muted);}
+  @media (max-width:860px){ .cred-grid{grid-template-columns:1fr 1fr;} }
+
+  .reviews-sec{background:var(--bg);}
+  .rev-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:36px;}
+  .rev-card{background:#fff; border-radius:16px; padding:26px; border:1px solid var(--line);}
+  .rev-card .stars{color:var(--accent); font-size:15px; margin-bottom:12px;}
+  .rev-card p{font-size:15.5px; color:#2b2b26;}
+  .rev-card .who{margin-top:14px; font-weight:700; font-size:13.5px; color:var(--muted);}
+  @media (max-width:860px){ .rev-grid{grid-template-columns:1fr;} }
+
+  .area-sec{background:#fff;}
+  .area-sec .wrap{display:grid; grid-template-columns:1.1fr 1fr; gap:48px; align-items:start;}
+  .chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:22px;}
+  .chip{background:var(--bg); color:var(--ink); font-weight:700; font-size:14px; padding:9px 18px; border-radius:999px; border:1px solid var(--line);}
+  .contact-card{background:var(--bg); border:1px solid var(--line); border-radius:18px; padding:30px;}
+  .contact-card h3{font-size:20px; margin-bottom:18px;}
+  .c-row{display:flex; align-items:center; gap:12px; padding:12px 0; border-bottom:1px solid var(--line); font-size:15px;}
+  .c-row:last-of-type{border-bottom:none;}
+  .c-row .ic{color:var(--accent); font-size:16px; width:20px;}
+  .call-now{display:block; text-align:center; background:var(--black); color:var(--accent2); font-weight:800; padding:15px; border-radius:999px; margin-top:20px; text-decoration:none;}
+  .fine{font-size:12.5px; color:var(--muted); margin-top:12px; text-align:center;}
+  .fine a{color:#a9820a; text-decoration:underline;}
+  @media (max-width:860px){ .area-sec .wrap{grid-template-columns:1fr;} }
+
+  #privacy{background:var(--bg); border-top:1px solid var(--line);}
+  #privacy h2{font-size:22px;}
+  #privacy .note{background:#fff4d6; color:#5b4a17; padding:14px 18px; border-radius:10px; font-size:13.5px; margin:18px 0;}
+  #privacy .lorem{font-size:14px; color:var(--muted); max-width:74ch;}
+
+  footer.site{background:var(--black); color:var(--sub); padding:28px 0; font-size:13.5px;}
+  footer.site .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;}
+  footer.site a{color:var(--accent2); text-decoration:underline;}
+
+  .call-bar{position:fixed; bottom:0; left:0; right:0; background:var(--black); color:var(--accent2); display:none; align-items:center; justify-content:center; gap:10px; padding:14px; font-weight:800; text-decoration:none; z-index:50; font-size:15px;}
+  @media (max-width:600px){ .call-bar{display:flex;} body{padding-bottom:60px;} }
+</style>
+</head>
+<body>
+
+<div class="banner"><b>Design preview</b> prepared for MAG Roofing by Sharpline Digital — not a live website. Photos are from MAG Roofing's own site; wording and details to be confirmed with the owner.</div>
+
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <img src="logo.webp" alt="MAG Roofing logo" width="150" height="68">
+    </div>
+    <nav class="links">
+      <a href="#why">Why us</a>
+      <a href="#work">Our work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="call-pill" href="tel:7783755557">&#128222; 778-375-5557</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="badge-row"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9 on Google &middot; 192 reviews &middot; Mission, BC</div>
+      <h1>A roof you'll never <span class="accent">think about again.</span></h1>
+      <p class="lead">Licensed, GAF-certified crews. 500+ roofs installed across BC, backed by a 5-year workmanship warranty and a 100% satisfaction guarantee.</p>
+      <div class="hero-cta">
+        <a class="btn-primary" href="tel:7783755557">&#128222; Get a free quote</a>
+        <a class="btn-outline" href="#contact">Email us</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="hero-560.webp" srcset="hero-560.webp 560w, hero-900.webp 900w" sizes="(max-width:860px) 90vw, 520px" alt="Aerial view of a completed asphalt shingle roof installation by MAG Roofing" width="560" height="312" fetchpriority="high">
+      <div class="float-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <strong>4.9 on Google</strong>
+        <span>192 local reviews</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap">
+    <div><div class="num">4.9 &#9733;</div><div class="lbl">192 Google reviews</div></div>
+    <div><div class="num">500+</div><div class="lbl">roofs installed across BC</div></div>
+    <div><div class="num">5-year</div><div class="lbl">workmanship warranty</div></div>
+    <div><div class="num">100%</div><div class="lbl">satisfaction guarantee</div></div>
+  </div>
+</section>
+
+<section id="why" class="why-sec">
+  <div class="wrap">
+    <div class="why-photo">
+      <img src="craftsman.webp" alt="MAG Roofing technician hand-nailing asphalt shingles" width="640" height="606" loading="lazy">
+      <div class="why-badge"><b>500+</b><span>roofs installed across BC</span></div>
+    </div>
+    <div>
+      <div class="eyebrow">Why MAG Roofing</div>
+      <h2>A roof is only as good as the crew behind it.</h2>
+      <p class="sec-sub" style="color:var(--sub);">Licensed, GAF-certified crews who treat your home like their own — and stand behind every shingle.</p>
+      <div class="why-list">
+        <div class="why-item"><b>Exceptional craftsmanship</b><p>We treat your home as our own — results that meet and exceed industry standards.</p></div>
+        <div class="why-item"><b>100% satisfaction guarantee</b><p>Every job is backed by our guarantee and a 5-year workmanship warranty.</p></div>
+        <div class="why-item"><b>Transparent, no-surprise pricing</b><p>Clear quotes and updates at every step, so you always know where things stand.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="work-sec">
+  <div class="wrap">
+    <div class="eyebrow">Our work</div>
+    <h2>Roofs we've done across BC</h2>
+    <p class="sec-sub">A sample of recent installs, replacements and repairs.</p>
+    <div class="work-grid">
+      <div class="work-card big">
+        <img src="svc-install.webp" alt="Aerial view of a full asphalt shingle roof installation" width="640" height="357" loading="lazy">
+        <div class="cap"><div class="tag">Asphalt shingle</div><div class="ttl">Roof Installation</div></div>
+      </div>
+      <div class="work-card">
+        <img src="svc-replace.webp" alt="Aerial view of a full roof replacement" width="640" height="98" loading="lazy">
+        <div class="cap"><div class="tag">Full re-roof</div><div class="ttl">Roof Replacement</div></div>
+      </div>
+      <div class="work-card">
+        <img src="svc-repairs.webp" alt="Aerial view of a roof repair for leaks and storm damage" width="640" height="123" loading="lazy">
+        <div class="cap"><div class="tag">Leaks &amp; storm</div><div class="ttl">Roof Repairs</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cred-sec">
+  <div class="wrap">
+    <div class="eyebrow">Credentials</div>
+    <h2>Licensed, certified, guaranteed</h2>
+    <div class="cred-grid">
+      <div class="cred"><b>GAF certified</b><span>Manufacturer-trained crews</span></div>
+      <div class="cred"><b>Licensed &amp; insured</b><span>Full coverage on every job</span></div>
+      <div class="cred"><b>5-year warranty</b><span>On workmanship</span></div>
+      <div class="cred"><b>500+ roofs</b><span>Installed across BC</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="reviews-sec">
+  <div class="wrap">
+    <div class="eyebrow">Reviews</div>
+    <h2>Rated 4.9 by BC homeowners</h2>
+    <p class="sec-sub">A few words from customers on Google.</p>
+    <div class="rev-grid">
+      <div class="rev-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;The project went smoothly, and the quality of workmanship was excellent. The crew paid great attention to detail and kept the site clean and organized throughout.&rdquo;</p>
+        <div class="who">Google review</div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;The guys worked very hard and got the job done in less than three days. They let us know what was going to happen when, and answered our questions. The roof looks great.&rdquo;</p>
+        <div class="who">Google review</div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;The crew were wonderful people to deal with — friendly, organized, hard working. They kept us in the loop with everything and answered any questions. Couldn't have asked for a better team.&rdquo;</p>
+        <div class="who">Google review</div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;Very pleased with the installation and the follow up. The crew took extra care protecting my neighbour's property. No more stress when the next storm comes along.&rdquo;</p>
+        <div class="who">Google review</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="area-sec">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Service area</div>
+      <h2>Serving Mission &amp; the Fraser Valley</h2>
+      <p class="sec-sub">Based in Mission, working homes across the region.</p>
+      <div class="chips">
+        <div class="chip">Mission</div>
+        <div class="chip">Abbotsford</div>
+        <div class="chip">Chilliwack</div>
+        <div class="chip">Fraser Valley</div>
+        <div class="chip">Lower Mainland</div>
+      </div>
+    </div>
+    <div class="contact-card" id="contact">
+      <h3>Get your free quote</h3>
+      <div class="c-row"><span class="ic">&#128222;</span> <a href="tel:7783755557">778-375-5557</a></div>
+      <div class="c-row"><span class="ic">&#9993;</span> <a href="mailto:info@magroofing.ca">info@magroofing.ca</a></div>
+      <div class="c-row"><span class="ic">&#128337;</span> Mon&ndash;Fri 9:30am&ndash;5pm &middot; Sat 11am&ndash;3pm</div>
+      <div class="c-row"><span class="ic">&#128205;</span> Mission, BC</div>
+      <a class="call-now" href="tel:7783755557">Call now</a>
+      <div class="fine">We only use your contact details to reply to you. <a href="#privacy">Privacy policy</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="privacy">
+  <div class="wrap">
+    <h2>Privacy policy</h2>
+    <div class="note">Placeholder text — a BC PIPA-compliant policy written for your business is included when the site is built.</div>
+    <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; MAG Roofing &middot; Mission, BC &middot; <a href="#privacy">Privacy policy</a></div>
+    <div>Preview designed by <a href="https://sharplinedigital.com">Sharpline Digital</a></div>
+  </div>
+</footer>
+
+<a class="call-bar" href="tel:7783755557">&#128222; Call 778-375-5557</a>
+
+</body>
+</html>
