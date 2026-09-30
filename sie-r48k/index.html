@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
 <title>Sierrans Roofing | Sloped Roofing Specialists — Langley, BC</title>
 <meta name="description" content="Sierrans Roofing — residential, strata & commercial roofing in Langley, BC. 5.0 stars, 73 reviews. Call 236-662-3667.">
 <link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
 <style>
 :root{
   --navy:#14284f; --navy2:#0d1c39; --blue:#33509c; --orange:#d9661f; --orange2:#c2560f;
-  --ink:#171a20; --muted:#5b6270; --bg:#f7f5f1; --card:#ffffff; --line:#e6e2da;
+  --ink:#171a20; --muted:hsl(220, 10%, 40%); --bg:#f7f5f1; --card:#ffffff; --line:#e6e2da;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
@@ -107,9 +108,29 @@ p.lead{color:var(--muted);font-size:17px;max-width:640px;margin:0 0 36px}
 
 footer{background:var(--navy2);color:#a9b2c4;padding:34px 0;font-size:13px;text-align:center}
 footer img{height:26px;margin-bottom:14px;opacity:.9}
+footer a{color:#cfd6e4;text-decoration:underline}
+
+/* preview banner */
+.preview-banner{background:#f4c430;color:#3a2c00;font-size:13px;text-align:center;padding:9px 16px;font-weight:600;line-height:1.4}
+
+/* privacy section */
+.privacy{background:var(--bg);padding:50px 0}
+.privacy h2{font-size:22px}
+.privacy .note{background:#fff3cd;border:1px solid #f0d878;color:#6b5a17;padding:14px 18px;border-radius:8px;font-size:14px;font-weight:600;margin-bottom:20px}
+.privacy p{color:var(--muted);font-size:14.5px}
+
+/* sticky mobile call bar */
+.call-bar{display:none}
+@media (max-width:700px){
+  .call-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--orange);box-shadow:0 -4px 14px rgba(0,0,0,.2)}
+  .call-bar a{flex:1;text-align:center;color:#fff;font-weight:800;font-size:16px;padding:14px 0;text-decoration:none}
+  body{padding-bottom:52px}
+}
 </style>
 </head>
 <body>
+
+<div class="preview-banner">Design preview prepared for Sierrans Roofing by Sharpline Digital — not a live website. Photos are from Sierrans Roofing's own site; wording and details to be confirmed with the owner.</div>
 
 <header>
   <div class="wrap">
@@ -244,21 +265,33 @@ footer img{height:26px;margin-bottom:14px;opacity:.9}
   </div>
 </section>
 
-<section class="cta">
+<section class="cta" id="contact">
   <div class="wrap">
     <h2>Ready for a quote?</h2>
     <p>Call now or reach out online — Sierrans Roofing is available 24/7 for residential, strata, and commercial roofing.</p>
     <div class="phone">236-662-3667</div>
     <a class="btn" href="tel:2366623667">Call Sierrans Roofing</a>
+    <p style="margin-top:22px;font-size:13px;color:#aeb8ca">Read our <a href="#privacy" style="color:#fff">privacy policy</a>.</p>
+  </div>
+</section>
+
+<section class="privacy" id="privacy">
+  <div class="wrap">
+    <h2>Privacy Policy</h2>
+    <div class="note">Placeholder text — a BC PIPA-compliant policy written for your business is included when the site is built.</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     <div>Sierrans Roofing · Langley, BC · 236-662-3667 · sierransroofing.ca</div>
-    <div style="margin-top:6px">Design preview by Sharpline Digital</div>
+    <div style="margin-top:6px">Design preview by Sharpline Digital · <a href="#privacy">Privacy Policy</a></div>
   </div>
 </footer>
+
+<div class="call-bar"><a href="tel:2366623667">📞 Call 236-662-3667</a></div>
 
 </body>
 </html>
