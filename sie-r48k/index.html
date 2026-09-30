@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sierrans Roofing | Sloped Roofing Specialists — Langley, BC</title>
+<meta name="description" content="Sierrans Roofing — residential, strata & commercial roofing in Langley, BC. 5.0 stars, 73 reviews. Call 236-662-3667.">
+<link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
+<style>
+:root{
+  --navy:#14284f; --navy2:#0d1c39; --blue:#33509c; --orange:#d9661f; --orange2:#c2560f;
+  --ink:#171a20; --muted:#5b6270; --bg:#f7f5f1; --card:#ffffff; --line:#e6e2da;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.btn{display:inline-block;background:var(--orange);color:#fff;font-weight:700;padding:14px 26px;border-radius:8px;text-decoration:none;font-size:17px;box-shadow:0 6px 16px rgba(217,102,31,.35)}
+.btn:hover{background:var(--orange2)}
+.btn-outline{display:inline-block;border:2px solid #fff;color:#fff;font-weight:700;padding:12px 24px;border-radius:8px;text-decoration:none;font-size:16px}
+
+/* header */
+header{background:var(--navy);position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 24px}
+header img.logo{height:38px;width:auto}
+header .call{color:#fff;font-weight:700;text-decoration:none;font-size:15px;display:flex;align-items:center;gap:8px}
+header .call span.num{font-size:17px}
+@media (max-width:600px){header .call span.txt{display:none}}
+
+/* hero */
+.hero{position:relative;color:#fff}
+.hero img{width:100%;height:560px;object-fit:cover;object-position:center 30%}
+.hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,28,57,.55) 0%,rgba(13,28,57,.75) 100%)}
+.hero .content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.hero .content .wrap{width:100%}
+.hero h1{font-size:44px;line-height:1.12;margin:0 0 14px;max-width:640px;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.hero p.sub{font-size:19px;max-width:560px;margin:0 0 26px;color:#e9edf5}
+.hero .badges{display:flex;gap:22px;margin-top:30px;flex-wrap:wrap}
+.hero .badge{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px}
+.stars{color:#ffb534;font-size:18px;letter-spacing:1px}
+@media (max-width:700px){
+  .hero img{height:520px;object-position:center 25%}
+  .hero h1{font-size:30px}
+  .hero p.sub{font-size:16px}
+}
+
+/* trust strip */
+.trust{background:var(--navy2);color:#cfd6e4;padding:14px 0;font-size:14px}
+.trust .wrap{display:flex;justify-content:center;gap:36px;flex-wrap:wrap;text-align:center}
+.trust b{color:#fff}
+
+/* sections */
+section{padding:64px 0}
+h2{font-size:32px;margin:0 0 10px;color:var(--navy)}
+p.lead{color:var(--muted);font-size:17px;max-width:640px;margin:0 0 36px}
+.center{text-align:center}
+.center p.lead{margin-left:auto;margin-right:auto}
+
+/* services */
+.services{background:var(--card)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:var(--bg);border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.card img{width:100%;height:220px;object-fit:cover}
+.card .body{padding:20px}
+.card h3{margin:0 0 8px;font-size:19px;color:var(--navy)}
+.card p{margin:0;color:var(--muted);font-size:15px}
+@media (max-width:800px){.grid3{grid-template-columns:1fr}}
+
+/* why us */
+.whyus{background:var(--navy);color:#fff}
+.whyus .flex{display:flex;gap:48px;align-items:center}
+.whyus .flex img{border-radius:12px;flex:1;width:50%;height:360px;object-fit:cover}
+.whyus .text{flex:1}
+.whyus h2{color:#fff}
+.whyus ul{list-style:none;margin:26px 0 0;padding:0}
+.whyus li{display:flex;gap:12px;margin-bottom:16px;font-size:16px;color:#e3e7f0}
+.whyus li .dot{color:var(--orange);font-weight:900;font-size:18px}
+@media (max-width:800px){.whyus .flex{flex-direction:column}.whyus .flex img{width:100%;height:260px}}
+
+/* reviews */
+.reviews{background:var(--bg)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.review{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px}
+.review .stars{margin-bottom:10px}
+.review p{margin:0 0 12px;color:var(--ink);font-size:15.5px}
+.review .who{color:var(--muted);font-size:14px;font-weight:700}
+@media (max-width:800px){.grid2{grid-template-columns:1fr}}
+
+/* gallery */
+.gallery{background:var(--card)}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.gallery-grid img{width:100%;height:280px;object-fit:cover;border-radius:10px}
+@media (max-width:700px){.gallery-grid{grid-template-columns:1fr}.gallery-grid img{height:220px}}
+
+/* area */
+.area{background:var(--bg);text-align:center}
+.chips{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:20px}
+.chip{background:#fff;border:1px solid var(--line);padding:9px 18px;border-radius:999px;font-weight:600;font-size:14px;color:var(--navy)}
+
+/* cta */
+.cta{background:var(--navy);color:#fff;text-align:center}
+.cta h2{color:#fff}
+.cta p{color:#dfe4ee;font-size:17px;max-width:520px;margin:0 auto 30px}
+.cta .phone{font-size:26px;font-weight:800;margin-bottom:22px;color:#fff}
+
+footer{background:var(--navy2);color:#a9b2c4;padding:34px 0;font-size:13px;text-align:center}
+footer img{height:26px;margin-bottom:14px;opacity:.9}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <img class="logo" src="assets/logo-header.webp" alt="Sierrans Roofing" width="180" height="56">
+    <a class="call" href="tel:2366623667"><span class="num">📞 236-662-3667</span><span class="txt">&nbsp;— Call now</span></a>
+  </div>
+</header>
+
+<div class="hero">
+  <img src="assets/hero.webp" alt="Sierrans Roofing crew re-roofing a large home in Langley, BC" width="1200" height="800" fetchpriority="high">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="wrap">
+      <h1>Langley's Sloped Roofing Specialists</h1>
+      <p class="sub">Residential, strata &amp; commercial roofing done right — the crew your neighbours already trust.</p>
+      <a class="btn" href="tel:2366623667">Call 236-662-3667</a>
+      <div class="badges">
+        <div class="badge"><span class="stars">★★★★★</span> 5.0 (73 Google reviews)</div>
+        <div class="badge">🛡️ Licensed &amp; insured</div>
+        <div class="badge">🕐 24/7 availability</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="trust">
+  <div class="wrap">
+    <div><b>5.0★</b> Google rating</div>
+    <div><b>73</b> verified reviews</div>
+    <div><b>Residential · Strata · Commercial</b></div>
+    <div><b>Langley &amp; Fraser Valley</b></div>
+  </div>
+</div>
+
+<section class="services">
+  <div class="wrap center">
+    <h2>What we do</h2>
+    <p class="lead">Full-service sloped roofing for homes, strata buildings, and commercial properties across the Fraser Valley.</p>
+    <div class="grid3">
+      <div class="card">
+        <img src="assets/svc-reroof.webp" alt="Full roof re-shingle crew at work on a Langley home" width="640" height="480" loading="lazy">
+        <div class="body">
+          <h3>Roof Replacement</h3>
+          <p>Full tear-off and re-roof with quality shingles built for the coast — done fast and cleaned up right.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/svc-craftsman.webp" alt="Sierrans Roofing crew re-roofing a craftsman-style home" width="640" height="480" loading="lazy">
+        <div class="body">
+          <h3>Residential Roofing</h3>
+          <p>New builds, re-roofs, and repairs on every home style — from craftsman bungalows to two-storey builds.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/svc-fleet.webp" alt="Two Sierrans Roofing vans on a job site" width="640" height="480" loading="lazy">
+        <div class="body">
+          <h3>Strata &amp; Commercial</h3>
+          <p>Multi-unit and commercial roofing crews, ready to mobilize with the trucks and manpower to move fast.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="whyus">
+  <div class="wrap">
+    <div class="flex">
+      <img src="assets/why-us.webp" alt="Aerial view of a full roof tear-off in progress" width="900" height="600" loading="lazy">
+      <div class="text">
+        <h2>Why Langley chooses Sierrans</h2>
+        <ul>
+          <li><span class="dot">✓</span> 5.0 stars across 73 Google reviews — homeowners keep naming Arnel and the crew by name</li>
+          <li><span class="dot">✓</span> Sloped-roofing specialists, not a jack-of-all-trades contractor</li>
+          <li><span class="dot">✓</span> Fully licensed, insured, and BBB accredited</li>
+          <li><span class="dot">✓</span> Available 24/7 for emergency calls</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap center">
+    <h2>What homeowners say</h2>
+    <p class="lead">Real reviews from Sierrans Roofing's Google Business profile.</p>
+    <div class="grid2">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>"Arnel and his team did an amazing job replacing our roof. Professional, on time, and cleaned up everything after. Highly recommend!"</p>
+        <div class="who">— Google review</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>"Great communication from start to finish. The crew worked fast and the new roof looks fantastic. Would use Sierrans again."</p>
+        <div class="who">— Google review</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>"Called for an emergency leak and Arnel had someone out the same day. Fixed properly, fair price. Can't ask for more."</p>
+        <div class="who">— Google review</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>"Sierrans re-roofed our strata building with minimal disruption to residents. Well organized crew, great results."</p>
+        <div class="who">— Google review</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap center">
+    <h2>Recent work</h2>
+    <p class="lead">A few jobs from around Langley and the Fraser Valley.</p>
+    <div class="gallery-grid">
+      <img src="assets/gallery-1.webp" alt="Sierrans Roofing crew working on a two-storey home roof" width="640" height="480" loading="lazy">
+      <img src="assets/gallery-2.webp" alt="Sierrans Roofing re-roof job with safety signage in place" width="640" height="480" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="area">
+  <div class="wrap">
+    <h2>Proudly serving</h2>
+    <div class="chips">
+      <span class="chip">Langley</span>
+      <span class="chip">Surrey</span>
+      <span class="chip">Abbotsford</span>
+      <span class="chip">Cloverdale</span>
+      <span class="chip">Fraser Valley</span>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Ready for a quote?</h2>
+    <p>Call now or reach out online — Sierrans Roofing is available 24/7 for residential, strata, and commercial roofing.</p>
+    <div class="phone">236-662-3667</div>
+    <a class="btn" href="tel:2366623667">Call Sierrans Roofing</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Sierrans Roofing · Langley, BC · 236-662-3667 · sierransroofing.ca</div>
+    <div style="margin-top:6px">Design preview by Sharpline Digital</div>
+  </div>
+</footer>
+
+</body>
+</html>
