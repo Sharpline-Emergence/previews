@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>5 Star Fence + Stain — Langley's Fence &amp; Deck Staining Specialists</title>
+<style>
+  :root{
+    --ink:#2b2b2b; --muted:#6b6b6b; --bg:#f7f5ef; --card:#ffffff; --line:#e6e0d3;
+    --green:#2e7d32; --green2:#1b5e20; --gold:#d4a017; --dark:#1c1c1c;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px;}
+
+  .preview-banner{background:#f4c430;color:#2b2200;text-align:center;font-size:13px;font-weight:600;padding:10px 16px;line-height:1.4;}
+
+  header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;}
+  .header-row{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;gap:16px;}
+  .brand{display:flex;align-items:center;gap:10px;}
+  .brand img{height:48px;width:auto;}
+  .brand-name{font-weight:800;font-size:18px;color:var(--green2);letter-spacing:.2px;}
+  .header-cta{display:flex;align-items:center;gap:18px;}
+  .phone-link{font-weight:700;color:var(--green2);text-decoration:none;font-size:15px;white-space:nowrap;}
+  .btn{display:inline-block;background:var(--green);color:#fff;padding:11px 20px;border-radius:6px;font-weight:700;text-decoration:none;font-size:14px;white-space:nowrap;}
+  .btn:hover{background:var(--green2);}
+
+  .hero{background:linear-gradient(180deg,#fff,#f2efe5);padding:56px 0 48px;}
+  .hero-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:40px;align-items:center;}
+  .stars{color:var(--gold);font-size:18px;letter-spacing:2px;margin-bottom:10px;}
+  .hero h1{font-size:34px;line-height:1.2;margin:0 0 14px;color:var(--green2);}
+  .hero p.lead{font-size:17px;color:var(--muted);margin:0 0 22px;max-width:46ch;}
+  .hero-stats{display:flex;gap:26px;margin:22px 0 26px;flex-wrap:wrap;}
+  .hero-stats div{font-size:13px;color:var(--muted);}
+  .hero-stats strong{display:block;font-size:22px;color:var(--green2);}
+  .hero-photo{border-radius:10px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.12);}
+  .hero-photo img{width:100%;height:320px;object-fit:cover;}
+  .hero-photo .cap{background:var(--dark);color:#cfcfcf;font-size:11px;padding:6px 10px;}
+
+  .trust{background:var(--dark);color:#fff;padding:18px 0;}
+  .trust-row{display:flex;justify-content:center;gap:48px;flex-wrap:wrap;text-align:center;font-size:14px;}
+  .trust-row strong{display:block;font-size:20px;color:var(--gold);}
+
+  section{padding:56px 0;}
+  h2{font-size:26px;color:var(--green2);text-align:center;margin:0 0 8px;}
+  .sub{text-align:center;color:var(--muted);margin:0 0 36px;font-size:15px;}
+
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .svc-card{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  .svc-card img{width:100%;height:180px;object-fit:cover;}
+  .svc-card .body{padding:18px;}
+  .svc-card h3{margin:0 0 8px;font-size:17px;color:var(--green2);}
+  .svc-card p{margin:0;font-size:14px;color:var(--muted);}
+
+  .materials{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .materials .wrap{display:flex;align-items:center;gap:36px;justify-content:center;flex-wrap:wrap;}
+  .materials img{max-height:110px;width:auto;}
+  .materials p{max-width:40ch;font-size:14px;color:var(--muted);margin:0;}
+
+  .reviews{background:var(--bg);}
+  .review-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  .review{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;font-size:14px;}
+  .review .stars{font-size:13px;margin-bottom:8px;}
+  .review .who{margin-top:10px;font-weight:700;color:var(--green2);font-size:13px;}
+
+  .areas{text-align:center;}
+  .chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px;}
+  .chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-size:14px;color:var(--green2);font-weight:600;}
+
+  .cta{background:var(--green2);color:#fff;text-align:center;}
+  .cta h2{color:#fff;}
+  .cta p{color:#d8e8d9;margin:0 0 24px;}
+  .cta .btn{background:var(--gold);color:#2b2200;}
+  .cta .btn:hover{background:#c29315;}
+
+  .privacy{background:#fff;border-top:1px solid var(--line);}
+  .privacy h2{text-align:left;font-size:20px;}
+  .privacy .note{background:#fff8e1;border:1px solid #f4c430;border-radius:8px;padding:14px 18px;font-size:13px;color:#5c4b00;margin-bottom:18px;}
+  .privacy p{font-size:13px;color:var(--muted);}
+
+  footer{background:var(--dark);color:#aaa;text-align:center;padding:28px 0;font-size:13px;}
+  footer a{color:#ddd;}
+
+  .call-bar{display:none;}
+
+  @media (max-width:860px){
+    .hero-grid{grid-template-columns:1fr;}
+    .services{grid-template-columns:1fr;}
+    .review-grid{grid-template-columns:1fr;}
+    .header-cta .btn{display:none;}
+  }
+  @media (max-width:700px){
+    .hero h1{font-size:27px;}
+    body{padding-bottom:62px;}
+    .call-bar{
+      display:flex;position:fixed;bottom:0;left:0;right:0;z-index:100;
+      background:var(--green2);color:#fff;text-align:center;
+    }
+    .call-bar a{flex:1;color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:14px 0;}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-banner">Design preview prepared for 5 Star Fence + Stain by Sharpline Digital — not a live website. Photos are from 5 Star Fence + Stain's own site; wording and details to be confirmed with the owner.</div>
+
+<header>
+  <div class="header-row">
+    <div class="brand">
+      <img src="assets/logo.webp" alt="5 Star Fence Staining logo">
+    </div>
+    <div class="header-cta">
+      <a class="phone-link" href="tel:6045103601">📞 604-510-3601</a>
+      <a class="btn" href="#contact">Get a Free Quote</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="stars">★★★★★</div>
+      <h1>Langley's Trusted Fence &amp; Deck Staining Specialists</h1>
+      <p class="lead">4.8 stars across 68 Google reviews. Quality cedar fencing, staining, and deck restoration — done right, on schedule, by a local crew.</p>
+      <div class="hero-stats">
+        <div><strong>4.8★</strong>68 Google reviews</div>
+        <div><strong>Mon–Fri</strong>8am – 5pm</div>
+        <div><strong>Langley</strong>&amp; Fraser Valley</div>
+      </div>
+      <a class="btn" href="#contact">Get a Free Quote</a>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/svc-cedarfence.webp" alt="Freshly stained two-tone cedar fence">
+      <div class="cap">Recent two-tone cedar fence — 5 Star Fence + Stain</div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap trust-row">
+    <div><strong>4.8★</strong>Google rating</div>
+    <div><strong>68</strong>Reviews</div>
+    <div><strong>1 day</strong>Typical fence job</div>
+    <div><strong>Local</strong>Langley-based crew</div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What We Do</h2>
+    <p class="sub">A sample of recent work from around Langley and the Fraser Valley.</p>
+    <div class="services">
+      <div class="svc-card">
+        <img src="assets/svc-cedarfence.webp" alt="New cedar fence installation">
+        <div class="body">
+          <h3>Fence Installation</h3>
+          <p>Custom cedar fences built and stained to last, with old materials recycled whenever possible.</p>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="assets/svc-commercial.webp" alt="Commercial fence staining project">
+        <div class="body">
+          <h3>Commercial Projects</h3>
+          <p>Larger-scale fencing and staining for businesses and multi-unit properties.</p>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="assets/svc-deck.webp" alt="Freshly stained deck">
+        <div class="body">
+          <h3>Deck Staining &amp; Restoration</h3>
+          <p>Bring a tired deck back to life with a professional-grade stain and finish.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="materials">
+  <div class="wrap">
+    <img src="assets/wooddefender.webp" alt="Wood Defender fence and deck stains">
+    <p>For professional, long-lasting results, 5 Star Fence + Stain uses Wood Defender fence &amp; deck stains — trusted, commercial-grade protection.</p>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <h2>What Customers Say</h2>
+    <p class="sub">Real reviews from Google.</p>
+    <div class="review-grid">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>"Amazing work and communication! Eric has been fantastic from the beginning to the very end. His team was respectful and a pleasure to have around."</p>
+        <div class="who">— Google review</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>"We were happy to be able to use a local Langley company. Eric's careful considerations and thoughtful explanations while visiting for an estimate were what made us choose 5 Star Fence. It is rare to find excellent service!"</p>
+        <div class="who">— Janet and Jeff, Langley</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>"Eric and his team were great from start to end. He got back to me with a quote right away. Great communication. They finished in one day. The fence looks awesome."</p>
+        <div class="who">— Google review</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>"Just had our fence stained. It was done quick and efficiently for a reasonable price. Would 100% hire them again. Eric was very easy to do business with."</p>
+        <div class="who">— Google review</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="areas">
+  <div class="wrap">
+    <h2>Proudly Serving</h2>
+    <div class="chips">
+      <div class="chip">Langley</div>
+      <div class="chip">Surrey</div>
+      <div class="chip">Abbotsford</div>
+      <div class="chip">Fraser Valley</div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap">
+    <h2>Ready for a Free Quote?</h2>
+    <p>Call or request a quote today — most fence jobs are completed in a single day.</p>
+    <a class="btn" href="tel:6045103601">📞 Call 604-510-3601</a>
+  </div>
+</section>
+
+<section class="privacy" id="privacy">
+  <div class="wrap">
+    <h2>Privacy Policy</h2>
+    <div class="note">Placeholder text — a BC PIPA-compliant policy written for your business is included when the site is built.</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. This site collects information you submit through our contact form, such as your name, phone number, and email address, solely to respond to your quote request. We do not sell or share your information with third parties. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>5 Star Fence + Stain · Langley, BC · 604-510-3601 · <a href="mailto:info@5starfencestaining.ca">info@5starfencestaining.ca</a></p>
+    <p>&copy; 2026 5 Star Fence + Stain. Design preview only.</p>
+  </div>
+</footer>
+
+<div class="call-bar"><a href="tel:6045103601">📞 Call 604-510-3601</a></div>
+
+</body>
+</html>
