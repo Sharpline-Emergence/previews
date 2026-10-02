@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Black Belt Renovations — Home Renovation Experts in Maple Ridge</title>
+<link rel="preload" as="image" href="assets/bathroom.webp" fetchpriority="high">
+<style>
+  :root{
+    --ink:#201f1c; --muted:#5c5b56; --bg:#f6f4ef; --card:#ffffff; --line:#e5e1d6;
+    --sage:#8da583; --sage-dark:#5f7a57; --dark:#1b1b18; --cream:#f0ede2;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+
+  .preview-banner{background:#f4c430;color:#2b2200;text-align:center;font-size:13px;font-weight:600;padding:10px 16px;line-height:1.4;}
+
+  header{background:var(--dark);position:sticky;top:0;z-index:50;}
+  .header-row{display:flex;align-items:center;justify-content:space-between;padding:10px 24px;gap:16px;}
+  .brand img{height:56px;width:auto;}
+  .header-cta{display:flex;align-items:center;gap:18px;}
+  .phone-link{font-weight:700;color:#fff;text-decoration:none;font-size:15px;white-space:nowrap;}
+  .btn{display:inline-block;background:var(--sage);color:#17210f;padding:11px 20px;border-radius:4px;font-weight:700;text-decoration:none;font-size:14px;white-space:nowrap;}
+  .btn:hover{background:var(--sage-dark);color:#fff;}
+
+  .hero{position:relative;background:var(--dark);}
+  .hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;align-items:stretch;min-height:520px;}
+  .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:60px 48px;color:#f3f1e9;}
+  .stars{color:#e0c168;font-size:18px;letter-spacing:2px;margin-bottom:12px;}
+  .hero h1{font-size:36px;line-height:1.2;margin:0 0 16px;font-family:Georgia,'Times New Roman',serif;}
+  .hero p.lead{font-size:17px;color:#cfccc0;margin:0 0 26px;max-width:46ch;}
+  .hero-stats{display:flex;gap:30px;margin:0 0 28px;flex-wrap:wrap;}
+  .hero-stats div{font-size:13px;color:#b9b6a9;}
+  .hero-stats strong{display:block;font-size:22px;color:#fff;}
+  .hero-photo{overflow:hidden;}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;min-height:360px;}
+
+  section{padding:64px 0;}
+  h2{font-size:28px;color:var(--ink);text-align:center;margin:0 0 8px;font-family:Georgia,'Times New Roman',serif;}
+  .sub{text-align:center;color:var(--muted);margin:0 0 40px;font-size:15px;}
+
+  .trust{background:var(--sage);color:#17210f;padding:20px 0;}
+  .trust-row{display:flex;justify-content:center;gap:52px;flex-wrap:wrap;text-align:center;font-size:14px;}
+  .trust-row strong{display:block;font-size:21px;}
+
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .svc-card{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden;}
+  .svc-card img{width:100%;height:230px;object-fit:cover;loading:lazy;}
+  .svc-card .body{padding:20px;}
+  .svc-card h3{margin:0 0 8px;font-size:17px;font-family:Georgia,serif;}
+  .svc-card p{margin:0;font-size:14px;color:var(--muted);}
+
+  .story{background:var(--cream);}
+  .story-grid{max-width:720px;margin:0 auto;text-align:center;}
+  .story h2{text-align:center;}
+  .story p{color:var(--muted);font-size:15px;}
+
+  .reviews{background:var(--bg);}
+  .review-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .review{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:22px;font-size:14px;}
+  .review .stars{font-size:13px;margin-bottom:8px;}
+  .review .who{margin-top:12px;font-weight:700;color:var(--sage-dark);font-size:13px;}
+
+  .areas{text-align:center;background:var(--dark);color:#f3f1e9;}
+  .areas h2{color:#fff;}
+  .chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px;}
+  .chip{background:#2a2a25;border:1px solid #44443c;border-radius:999px;padding:8px 18px;font-size:14px;color:#f0ede2;font-weight:600;}
+
+  .cta{background:var(--sage-dark);color:#fff;text-align:center;}
+  .cta h2{color:#fff;}
+  .cta p{color:#e7ead8;margin:0 0 26px;}
+  .cta .btn{background:#fff;color:var(--sage-dark);}
+  .cta .btn:hover{background:#eee;}
+
+  .privacy{background:#fff;border-top:1px solid var(--line);}
+  .privacy h2{text-align:left;font-size:20px;}
+  .privacy .note{background:#fff8e1;border:1px solid #f4c430;border-radius:8px;padding:14px 18px;font-size:13px;color:#5c4b00;margin-bottom:18px;}
+  .privacy p{font-size:13px;color:var(--muted);}
+
+  footer{background:var(--dark);color:#aaa;text-align:center;padding:30px 0;font-size:13px;}
+  footer a{color:#ddd;}
+
+  .call-bar{display:none;}
+
+  @media (max-width:860px){
+    .hero-grid{grid-template-columns:1fr;min-height:0;}
+    .hero-photo img{min-height:280px;}
+    .hero-copy{padding:40px 24px;}
+    .services{grid-template-columns:1fr;}
+    .story-grid{grid-template-columns:1fr;}
+    .review-grid{grid-template-columns:1fr;}
+    .header-cta .btn{display:none;}
+  }
+  @media (max-width:700px){
+    .hero h1{font-size:28px;}
+    body{padding-bottom:62px;}
+    .call-bar{
+      display:flex;position:fixed;bottom:0;left:0;right:0;z-index:100;
+      background:var(--sage-dark);color:#fff;text-align:center;
+    }
+    .call-bar a{flex:1;color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:14px 0;}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-banner">Design preview prepared for Black Belt Renovations by Sharpline Digital — not a live website. Photos are from Black Belt Renovations' own site; wording and details to be confirmed with the owner.</div>
+
+<header>
+  <div class="header-row">
+    <div class="brand">
+      <img src="assets/logo.webp" alt="Black Belt Renovations logo">
+    </div>
+    <div class="header-cta">
+      <a class="phone-link" href="tel:6043790880">📞 604-379-0880</a>
+      <a class="btn" href="#contact">Get a Free Quote</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="stars">★★★★★</div>
+      <h1>Home Renovation Experts in Maple Ridge</h1>
+      <p class="lead">5.0 stars across 36 Google reviews. Kitchens, bathrooms, and whole-home renovations — done with care, on budget, and on time.</p>
+      <div class="hero-stats">
+        <div><strong>5.0★</strong>36 Google reviews</div>
+        <div><strong>Mon–Fri</strong>9am – 5pm</div>
+        <div><strong>Maple Ridge</strong>&amp; Fraser Valley</div>
+      </div>
+      <a class="btn" href="#contact">Get a Free Quote</a>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/bathroom.webp" alt="Renovated bathroom with floating wood vanity and freestanding tub" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap trust-row">
+    <div><strong>5.0★</strong>Google rating</div>
+    <div><strong>36</strong>Reviews</div>
+    <div><strong>On budget</strong>Rare in this industry</div>
+    <div><strong>Local</strong>Maple Ridge-based crew</div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What We Do</h2>
+    <p class="sub">A sample of recent work from around Maple Ridge and the Fraser Valley.</p>
+    <div class="services">
+      <div class="svc-card">
+        <img src="assets/bathroom.webp" alt="Bathroom renovation with double vanity" loading="lazy">
+        <div class="body">
+          <h3>Bathroom Renovations</h3>
+          <p>Full bathroom remodels — vanities, tile, and fixtures, finished with careful attention to detail.</p>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="assets/library.webp" alt="Custom built-in library shelving" loading="lazy">
+        <div class="body">
+          <h3>Custom Built-Ins</h3>
+          <p>Custom millwork and built-in shelving designed around how you actually live.</p>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="assets/lounge.webp" alt="Renovated living room with fireplace" loading="lazy">
+        <div class="body">
+          <h3>Whole-Home Renovations</h3>
+          <p>From single rooms to full-home projects, scoped practically and delivered close to estimate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap story-grid">
+    <h2>Fraser and the Black Belt Team</h2>
+    <p>Customers consistently point to the same thing: Fraser is practical from day one, helping homeowners find the right scope instead of chasing expensive add-ons, and the crew — including Katherine's detailed tile work — keeps every home clean throughout the project. Reviewers say the final invoice has come in close to the original estimate, which they describe as rare in this industry.</p>
+    <p><strong>Call Fraser directly: <a href="tel:6043790880">604-379-0880</a></strong></p>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <h2>What Customers Say</h2>
+    <p class="sub">Real reviews from Google.</p>
+    <div class="review-grid">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>"Black Belt did an amazing job with our bathroom renovation! Katie, Fraser and the whole crew were respectful in our home and made the process as easy as it could be. They made sure our home was left clean at the end of each day."</p>
+        <div class="who">— Google review</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>"Fraser, Katherine, Kali and Iris did a fantastic job on our bathroom and closet renovation. They came up with a great design and practical, cost-effective solutions. Their communication was excellent at all times."</p>
+        <div class="who">— Google review</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>"After reviewing our final budget and invoices, I'm impressed by how closely they came to their original estimate. In this industry, that is rare. Fraser was practical from day one."</p>
+        <div class="who">— Google review</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>"From our first meeting until final inspection, Fraser, Katie & Kali were incredible to deal with… professional, respectful, courteous, punctual & fun to be around. Highly recommended."</p>
+        <div class="who">— Google review</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="areas">
+  <div class="wrap">
+    <h2>Proudly Serving</h2>
+    <div class="chips">
+      <div class="chip">Maple Ridge</div>
+      <div class="chip">Pitt Meadows</div>
+      <div class="chip">Langley</div>
+      <div class="chip">Fraser Valley</div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap">
+    <h2>Ready for a Free Quote?</h2>
+    <p>Call Fraser today to talk through your project.</p>
+    <a class="btn" href="tel:6043790880">📞 Call 604-379-0880</a>
+  </div>
+</section>
+
+<section class="privacy" id="privacy">
+  <div class="wrap">
+    <h2>Privacy Policy</h2>
+    <div class="note">Placeholder text — a BC PIPA-compliant policy written for your business is included when the site is built.</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. This site collects information you submit through our contact form, such as your name, phone number, and email address, solely to respond to your quote request. We do not sell or share your information with third parties. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Black Belt Renovations · 10111 243 Street, Maple Ridge, BC V2W 1X3 · 604-379-0880 · <a href="mailto:info@blackbeltrenovations.ca">info@blackbeltrenovations.ca</a></p>
+    <p>&copy; 2026 Black Belt Renovations. Design preview only.</p>
+  </div>
+</footer>
+
+<div class="call-bar"><a href="tel:6043790880">📞 Call 604-379-0880</a></div>
+
+</body>
+</html>
