@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Mountain View Tree Service | Maple Ridge, Abbotsford & PoCo</title>
+<style>
+  :root{
+    --ink:#1c1c1a;
+    --ink-2:#262621;
+    --orange:#e2782c;
+    --orange-dark:#c7621f;
+    --green:#6b8e3d;
+    --paper:#f7f6f2;
+    --muted:#5c5d56;
+    --sub:#cfd0c6;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px;}
+
+  .disclaimer{
+    background:#f7b733;color:#2a2400;font-size:13px;line-height:1.5;
+    text-align:center;padding:10px 16px;
+  }
+
+  header.site{
+    position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e9e8e2;
+  }
+  header.site .bar{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:8px 20px;max-width:1180px;margin:0 auto;gap:16px;
+  }
+  header.site img.logo{height:54px;width:auto;}
+  .call-btn{
+    background:var(--orange);color:#fff;font-weight:700;padding:10px 18px;
+    border-radius:8px;text-decoration:none;font-size:15px;white-space:nowrap;
+  }
+
+  .hero{position:relative;color:#fff;overflow:hidden;}
+  .hero img{width:100%;height:540px;object-fit:cover;object-position:60% 30%;display:block;}
+  .hero .scrim{
+    position:absolute;inset:0;
+    background:linear-gradient(100deg, rgba(20,22,16,0.92) 0%, rgba(20,22,16,0.72) 42%, rgba(20,22,16,0.25) 78%, rgba(20,22,16,0.08) 100%);
+  }
+  .hero .content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:32px 20px;}
+  .hero .content .inner{max-width:1180px;margin:0 auto;width:100%;}
+  .star-badge{
+    display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.12);
+    border:1px solid rgba(255,255,255,0.3);padding:6px 12px;border-radius:999px;
+    font-size:13px;font-weight:600;margin-bottom:16px;
+  }
+  .star-badge .stars{color:var(--orange);letter-spacing:1px;}
+  .hero h1{font-size:38px;line-height:1.15;margin:0 0 14px;font-weight:800;max-width:600px;}
+  .hero p.sub{font-size:17px;line-height:1.6;max-width:520px;color:#e4e4dc;margin:0 0 24px;}
+  .hero .ctas{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn{display:inline-block;padding:13px 24px;border-radius:8px;font-weight:700;text-decoration:none;font-size:15px;}
+  .btn.primary{background:var(--orange);color:#fff;}
+  .btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,0.6);color:#fff;}
+
+  .trust{background:var(--ink);color:#fff;padding:22px 0;}
+  .trust .row{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-around;text-align:center;}
+  .trust .item .big{font-size:24px;font-weight:800;color:var(--orange);}
+  .trust .item .label{font-size:13px;color:var(--sub);margin-top:2px;}
+
+  section{padding:56px 0;}
+  h2.h{font-size:28px;margin:0 0 8px;color:var(--ink);font-weight:800;}
+  p.lede{color:var(--muted);font-size:16px;max-width:620px;margin:0 0 32px;}
+
+  .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  .svc-card{background:#fff;border:1px solid #e9e8e2;border-radius:12px;padding:22px 18px;text-align:left;}
+  .svc-card .ico{
+    width:42px;height:42px;border-radius:10px;background:var(--ink);
+    display:flex;align-items:center;justify-content:center;color:var(--orange);
+    font-weight:800;font-size:18px;margin-bottom:14px;
+  }
+  .svc-card h3{font-size:17px;margin:0 0 6px;color:var(--ink);}
+  .svc-card p{font-size:14px;color:var(--muted);margin:0;line-height:1.5;}
+
+  .work{background:#fff;}
+  .work .grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:40px;align-items:center;}
+  .work img{border-radius:14px;width:100%;height:auto;}
+  .work .copy p{color:var(--muted);font-size:16px;line-height:1.7;}
+  .checklist{list-style:none;padding:0;margin:20px 0 0;}
+  .checklist li{padding-left:28px;position:relative;margin-bottom:10px;color:var(--ink);font-size:15px;}
+  .checklist li:before{
+    content:"✓";position:absolute;left:0;top:0;color:#fff;background:var(--green);
+    width:18px;height:18px;border-radius:50%;font-size:12px;line-height:18px;text-align:center;font-weight:800;
+  }
+
+  .reviews{background:var(--ink);color:#fff;}
+  .reviews h2{color:#fff;}
+  .reviews p.lede{color:var(--sub);}
+  .rev-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  .rev-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:22px;}
+  .rev-card .stars{color:var(--orange);font-size:14px;margin-bottom:10px;letter-spacing:1px;}
+  .rev-card p{font-size:14.5px;line-height:1.6;color:#eceae2;margin:0 0 12px;}
+  .rev-card .who{font-size:13px;color:#b7b7ac;font-weight:600;}
+
+  .areas{text-align:center;}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:10px;}
+  .chip{border:1.5px solid var(--green);color:var(--ink);padding:8px 16px;border-radius:999px;font-size:13.5px;font-weight:700;}
+
+  .cta-band{background:var(--orange);text-align:center;}
+  .cta-band h2{color:#2a1400;margin:0 0 10px;}
+  .cta-band p{color:#3a1f05;margin:0 0 22px;font-size:16px;}
+  .cta-band .btn.primary{background:var(--ink);color:#fff;}
+
+  #privacy{background:#fff;}
+  #privacy h2{font-size:22px;}
+  #privacy .box{background:var(--paper);border:1px solid #e9e8e2;border-radius:10px;padding:22px;font-size:14px;color:var(--muted);line-height:1.7;}
+  #privacy .note{margin-top:14px;font-size:13px;color:#8a1f1f;background:#fdecec;border:1px solid #f3c6c6;padding:10px 14px;border-radius:8px;}
+
+  footer{background:var(--ink);color:var(--sub);padding:40px 0 100px;}
+  footer .cols{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px;}
+  footer .logo{background:#fff;display:inline-block;padding:10px 16px;border-radius:8px;margin-bottom:14px;}
+  footer .logo img{height:48px;}
+  footer h4{color:#fff;font-size:14px;margin:0 0 12px;}
+  footer p, footer a{font-size:13.5px;line-height:1.9;color:var(--sub);text-decoration:none;}
+  footer .fine{margin-top:28px;font-size:12px;color:#8c8c82;border-top:1px solid rgba(255,255,255,0.1);padding-top:18px;}
+
+  .call-bar{
+    position:fixed;bottom:0;left:0;right:0;background:var(--ink);display:none;
+    padding:12px 16px;z-index:60;box-shadow:0 -4px 16px rgba(0,0,0,0.2);
+  }
+  .call-bar a{display:block;text-align:center;background:var(--orange);color:#fff;font-weight:800;padding:13px;border-radius:8px;text-decoration:none;font-size:16px;}
+
+  @media (max-width:860px){
+    .services-grid{grid-template-columns:repeat(2,1fr);}
+    .work .grid{grid-template-columns:1fr;}
+    .rev-grid{grid-template-columns:1fr;}
+    footer .cols{grid-template-columns:1fr;}
+    .hero h1{font-size:28px;}
+    .hero img{height:460px;}
+    .hero .content{padding:24px 16px;}
+    .call-bar{display:block;}
+    header.site .bar{padding:8px 16px;gap:10px;}
+    header.site img.logo{height:40px;}
+    .call-btn{padding:9px 12px;font-size:13px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclaimer">
+  Design preview prepared for Mountain View Tree Service by Sharpline Digital — not a live website. Photos are from Mountain View Tree Service's own site; wording and details to be confirmed with the owner.
+</div>
+
+<header class="site">
+  <div class="bar">
+    <img class="logo" src="images/logo.webp" alt="Mountain View Tree Service Inc logo" width="170" height="126">
+    <a class="call-btn" href="tel:6046156855">📞 (604) 615-6855</a>
+  </div>
+</header>
+
+<div class="hero">
+  <link rel="preload" as="image" href="images/hero.webp" fetchpriority="high">
+  <img src="images/hero.webp" srcset="images/hero-560.webp 560w, images/hero.webp 1600w" sizes="100vw" alt="Mountain View Tree Service arborist climbing a tall tree, Maple Ridge BC" width="1600" height="1150" fetchpriority="high">
+  <div class="scrim"></div>
+  <div class="content">
+    <div class="inner">
+      <div class="star-badge"><span class="stars">★★★★★</span> 4.9 stars · 182 Google reviews</div>
+      <h1>Maple Ridge's most trusted tree service, 24/7</h1>
+      <p class="sub">Tree removal, pruning, and storm cleanup from a crew climbers trust with the tough jobs — led by a 15-year arborist named Waylon.</p>
+      <div class="ctas">
+        <a class="btn primary" href="tel:6046156855">Call (604) 615-6855</a>
+        <a class="btn ghost" href="#services">See our services</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="trust">
+  <div class="wrap row">
+    <div class="item"><div class="big">4.9★</div><div class="label">182 Google reviews</div></div>
+    <div class="item"><div class="big">24/7</div><div class="label">Emergency tree service</div></div>
+    <div class="item"><div class="big">15+ yrs</div><div class="label">Led by arborist Waylon Collier</div></div>
+    <div class="item"><div class="big">Maple Ridge</div><div class="label">& the surrounding area</div></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2 class="h">What we do</h2>
+    <p class="lede">From a single hazard limb to a full removal with no truck access — we've climbed it.</p>
+    <div class="services-grid">
+      <div class="svc-card">
+        <div class="ico">T</div>
+        <h3>Tree Removal</h3>
+        <p>Safe, skilled removal of large or hazardous trees, including tight-access properties.</p>
+      </div>
+      <div class="svc-card">
+        <div class="ico">P</div>
+        <h3>Pruning &amp; Canopy Lifting</h3>
+        <p>Tree trimming, canopy reduction, and cabling &amp; bracing to protect valuable trees.</p>
+      </div>
+      <div class="svc-card">
+        <div class="ico">S</div>
+        <h3>Stump Grinding</h3>
+        <p>Clean, complete stump removal so your yard is ready for what's next.</p>
+      </div>
+      <div class="svc-card">
+        <div class="ico">D</div>
+        <h3>Storm Damage Cleanup</h3>
+        <p>Fast response for fallen or damaged trees after a storm, day or night.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="work">
+  <div class="wrap grid">
+    <img src="images/crew.webp" loading="lazy" width="700" height="700" alt="Mountain View Tree Service crew on the job in Maple Ridge" style="aspect-ratio:1/1;height:auto;">
+    <div class="copy">
+      <h2 class="h">Led by a climber with 15+ years in the trees</h2>
+      <p>Waylon Collier is the director of Mountain View Tree Service — an experienced arborist and powerline technician by trade. Reviews consistently call out Waylon and the crew by name for careful rigging, thoughtful cuts, and leaving the yard cleaner than they found it, even on properties with no truck access.</p>
+      <ul class="checklist">
+        <li>Skilled arborists for tight-access and difficult removals</li>
+        <li>Careful rigging — no scratches on gutters, fences, or siding</li>
+        <li>Clean-up included: yards left tidier than before the crew arrived</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <h2 class="h">What customers say</h2>
+    <p class="lede">Real excerpts from Google reviews.</p>
+    <div class="rev-grid">
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p>"Waylon came by to assess for an estimate, offering a most unique plan to take them out properly, with the root balls and all... the team showed up on time, were super nice and left the site clean and tidy upon completion."</p>
+        <div class="who">— Google review</div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p>"Super talented arborists and you can just tell they have a passion for trees and for their art. Every cut was thoughtfully placed... they left the yard cleaner than before they arrived, even raking up old fallen leaves."</p>
+        <div class="who">— Google review</div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p>"Waylon and his crew did an amazing job on our large maple and oak trees. With no access for a bucket truck, their skilled arborists were able to safely prune and drop the limbs... very reasonable price for the services rendered."</p>
+        <div class="who">— Google review</div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p>"Waylon and Randy were amazing! Very professional and knowledgeable. I'm impressed with their skill level in taking down some dead and dying trees on our property... dropped the branches safely and efficiently."</p>
+        <div class="who">— Google review</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="areas">
+  <div class="wrap">
+    <h2 class="h">Proudly serving Maple Ridge &amp; beyond</h2>
+    <p class="lede" style="margin-left:auto;margin-right:auto;">Based in Maple Ridge, on call 24/7 across the area.</p>
+    <div class="chips">
+      <span class="chip">Maple Ridge</span>
+      <span class="chip">Pitt Meadows</span>
+      <span class="chip">Abbotsford</span>
+      <span class="chip">Port Coquitlam</span>
+      <span class="chip">Coquitlam</span>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="wrap" style="padding:50px 20px;">
+    <h2 class="h" style="color:inherit;">Hazard tree? Storm damage? Call now.</h2>
+    <p>24/7 emergency response — talk to a real person, day or night.</p>
+    <a class="btn primary" href="tel:6046156855">Call (604) 615-6855</a>
+  </div>
+</div>
+
+<section id="privacy">
+  <div class="wrap" style="max-width:760px;">
+    <h2 class="h">Privacy Policy</h2>
+    <div class="box">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. This placeholder text stands in for a full policy covering what information is collected through this site's contact form and how it is used and stored.</p>
+    </div>
+    <p class="note">Placeholder text — a BC PIPA-compliant policy written for your business is included when the site is built.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="logo"><img src="images/logo.webp" alt="Mountain View Tree Service Inc logo" width="150" height="111" loading="lazy"></div>
+        <p>Maple Ridge, BC</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:6046156855">(604) 615-6855</a></p>
+        <p>Available 24/7</p>
+      </div>
+      <div>
+        <h4>Service Area</h4>
+        <p>Maple Ridge, Pitt Meadows,<br>Abbotsford &amp; PoCo</p>
+        <p><a href="#privacy">Privacy Policy</a></p>
+      </div>
+    </div>
+    <div class="fine">© 2026 Mountain View Tree Service Inc. This is a design preview, not the live Mountain View Tree Service website.</div>
+  </div>
+</footer>
+
+<div class="call-bar">
+  <a href="tel:6046156855">📞 Call Mountain View Tree Service — (604) 615-6855</a>
+</div>
+
+</body>
+</html>
