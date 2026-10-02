@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>AAA Advanced Windows & Doors | Abbotsford, BC</title>
+<style>
+  :root{
+    --navy:#014378;
+    --navy-dark:#0a2c47;
+    --navy-darker:#071f33;
+    --green:#01a65a;
+    --indigo:#484b7f;
+    --ink:#182230;
+    --muted:#5b6678;
+    --line:#e4e8ee;
+    --bg:#ffffff;
+    --bg-soft:#f4f7fa;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+
+  /* Disclaimer */
+  .disclaimer{
+    background:#fff3cd;
+    color:#5c4a12;
+    font-size:13px;
+    text-align:center;
+    padding:9px 16px;
+    border-bottom:1px solid #f0d98a;
+  }
+
+  /* Header */
+  header.site{
+    position:sticky; top:0; z-index:50;
+    background:#fff;
+    border-bottom:1px solid var(--line);
+  }
+  header.site .bar{
+    max-width:1120px;margin:0 auto;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 24px;gap:20px;
+  }
+  header.site img.logo{height:40px;width:auto;}
+  nav.main{display:flex;gap:28px;font-size:15px;font-weight:600;color:var(--navy);}
+  nav.main a{text-decoration:none;}
+  .call-btn{
+    background:var(--green);color:#fff;font-weight:700;font-size:15px;
+    padding:11px 20px;border-radius:8px;text-decoration:none;white-space:nowrap;
+  }
+
+  /* Hero */
+  .hero{
+    position:relative;
+    background:linear-gradient(135deg,var(--navy) 0%, var(--navy-dark) 55%, var(--navy-darker) 100%);
+    color:#fff;
+    overflow:hidden;
+    padding:72px 0 88px;
+  }
+  .hero .tri{
+    position:absolute; top:-60px; right:-120px;
+    width:620px; height:620px;
+    opacity:0.14;
+  }
+  .hero .tri2{
+    position:absolute; bottom:-180px; left:-140px;
+    width:460px; height:460px;
+    opacity:0.10;
+  }
+  .hero-inner{position:relative;z-index:2;max-width:680px;}
+  .badge-rating{
+    display:inline-flex;align-items:center;gap:8px;
+    background:rgba(255,255,255,0.12);
+    border:1px solid rgba(255,255,255,0.25);
+    padding:7px 14px;border-radius:999px;
+    font-size:13px;font-weight:600;color:#fff;
+    margin-bottom:22px;
+  }
+  .badge-rating .stars{color:#ffc84a;letter-spacing:1px;}
+  .hero h1{
+    font-size:44px;line-height:1.14;margin:0 0 18px;font-weight:800;
+    letter-spacing:-0.5px;
+  }
+  .hero h1 span{color:#6fe0ab;}
+  .hero p.lead{
+    font-size:18px;color:#cdd8e6;margin:0 0 30px;max-width:540px;
+  }
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--green);color:#fff;font-weight:700;font-size:16px;
+    padding:14px 26px;border-radius:9px;text-decoration:none;
+  }
+  .btn-ghost{
+    background:transparent;color:#fff;font-weight:700;font-size:16px;
+    padding:14px 26px;border-radius:9px;text-decoration:none;
+    border:1.5px solid rgba(255,255,255,0.5);
+  }
+
+  /* Trust strip */
+  .trust{
+    background:var(--bg-soft);
+    border-bottom:1px solid var(--line);
+    padding:26px 0;
+  }
+  .trust .wrap{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center;
+  }
+  .trust .item .num{font-size:21px;font-weight:800;color:var(--navy);display:block;}
+  .trust .item .lbl{font-size:13px;color:var(--muted);margin-top:3px;}
+
+  /* Section heading */
+  .section{padding:72px 0;}
+  .section.soft{background:var(--bg-soft);}
+  .eyebrow{
+    font-size:13px;font-weight:700;color:var(--green);text-transform:uppercase;
+    letter-spacing:0.08em;margin:0 0 10px;
+  }
+  h2.sec-title{font-size:30px;font-weight:800;color:var(--navy);margin:0 0 14px;letter-spacing:-0.3px;}
+  p.sec-sub{font-size:16px;color:var(--muted);max-width:560px;margin:0 0 40px;}
+
+  /* Services grid */
+  .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  .svc-card{
+    background:#fff;border:1px solid var(--line);border-radius:14px;
+    padding:28px 22px;text-align:left;
+  }
+  .svc-card .icn{
+    width:46px;height:46px;border-radius:11px;
+    background:linear-gradient(135deg,var(--navy),var(--green));
+    display:flex;align-items:center;justify-content:center;margin-bottom:16px;
+  }
+  .svc-card .icn svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:2;}
+  .svc-card h3{font-size:17px;margin:0 0 8px;color:var(--ink);}
+  .svc-card p{font-size:14px;color:var(--muted);margin:0;}
+
+  /* Why us */
+  .why-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:54px;align-items:center;}
+  .why-grid ul{list-style:none;margin:0;padding:0;}
+  .why-grid li{
+    display:flex;gap:14px;margin-bottom:20px;font-size:15.5px;color:var(--ink);
+  }
+  .why-grid li .chk{
+    flex:none;width:26px;height:26px;border-radius:50%;
+    background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;
+    font-size:14px;font-weight:800;
+  }
+  .stat-card{
+    background:var(--navy);color:#fff;border-radius:16px;padding:40px 32px;
+  }
+  .stat-card .row{display:flex;justify-content:space-between;margin-bottom:26px;}
+  .stat-card .row:last-child{margin-bottom:0;}
+  .stat-card .row .n{font-size:34px;font-weight:800;}
+  .stat-card .row .l{font-size:13px;color:#aebcd0;margin-top:4px;}
+
+  /* Reviews */
+  .reviews{background:var(--navy-darker);color:#fff;}
+  .reviews h2.sec-title{color:#fff;}
+  .reviews p.sec-sub{color:#9fb0c6;}
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .rev-card{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:14px;padding:26px;
+  }
+  .rev-card .stars{color:#ffc84a;font-size:14px;margin-bottom:12px;letter-spacing:2px;}
+  .rev-card p{font-size:14.5px;color:#dce4ee;margin:0 0 14px;}
+  .rev-card .src{font-size:12.5px;color:#8ea0b8;font-weight:600;}
+
+  /* Areas */
+  .areas{text-align:center;}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+  .chip{
+    background:var(--bg-soft);border:1px solid var(--line);
+    padding:9px 18px;border-radius:999px;font-size:14px;font-weight:600;color:var(--navy);
+  }
+
+  /* CTA band */
+  .cta-band{
+    background:linear-gradient(135deg,var(--green),#018c4d);
+    color:#fff;text-align:center;padding:56px 24px;
+  }
+  .cta-band h2{font-size:28px;margin:0 0 12px;font-weight:800;}
+  .cta-band p{font-size:16px;margin:0 0 24px;color:#e4fff1;}
+  .cta-band .btn-primary{background:#fff;color:var(--green);}
+
+  /* Privacy */
+  #privacy{padding:60px 0;}
+  #privacy h2{font-size:22px;color:var(--navy);margin:0 0 14px;}
+  #privacy p{font-size:14px;color:var(--muted);margin:0 0 12px;}
+  .priv-note{
+    background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;
+    padding:14px 18px;font-size:13px;color:var(--muted);margin-top:18px;
+  }
+
+  /* Footer */
+  footer{background:var(--navy-darker);color:#b7c4d6;padding:46px 0 100px;}
+  footer .f-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;margin-bottom:28px;}
+  .logo-box{background:#fff;border-radius:10px;padding:10px 16px;display:inline-flex;}
+  .logo-box img{height:28px;}
+  footer .f-links{display:flex;gap:22px;font-size:14px;flex-wrap:wrap;}
+  footer .f-links a{text-decoration:none;color:#b7c4d6;}
+  footer .f-bottom{font-size:12.5px;color:#718299;border-top:1px solid rgba(255,255,255,0.08);padding-top:20px;}
+
+  /* Sticky mobile call bar */
+  .call-bar{
+    display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;
+    background:var(--green);color:#fff;text-align:center;
+    padding:14px;font-weight:700;font-size:16px;text-decoration:none;
+  }
+
+  @media (max-width:980px){
+    .hero h1{font-size:34px;}
+    .trust .wrap{grid-template-columns:repeat(2,1fr);row-gap:18px;}
+    .svc-grid{grid-template-columns:repeat(2,1fr);}
+    .why-grid{grid-template-columns:1fr;gap:36px;}
+    .rev-grid{grid-template-columns:1fr;}
+    nav.main{display:none;}
+  }
+  @media (max-width:860px){
+    header.site .bar{padding:10px 16px;gap:10px;}
+    header.site img.logo{height:28px;}
+    .call-btn{padding:9px 12px;font-size:13px;}
+  }
+  @media (max-width:600px){
+    .hero{padding:48px 0 64px;}
+    .hero h1{font-size:28px;}
+    .hero p.lead{font-size:16px;}
+    .section{padding:52px 0;}
+    .svc-grid{grid-template-columns:1fr;}
+    .trust .wrap{grid-template-columns:repeat(2,1fr);}
+    body{padding-bottom:60px;}
+    .call-bar{display:block;}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclaimer">
+  Design preview prepared for AAA Advanced Windows &amp; Doors by Sharpline Digital — not a live website. Wording and details to be confirmed with the owner.
+</div>
+
+<header class="site">
+  <div class="bar">
+    <img class="logo" src="logo.webp" alt="AAA Advanced Windows & Doors Ltd.">
+    <nav class="main">
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#areas">Service Area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="call-btn" href="tel:6048554444">Call 604-855-4444</a>
+  </div>
+</header>
+
+<section class="hero">
+  <svg class="tri" viewBox="0 0 100 100"><polygon points="50,5 95,95 5,95" fill="#ffffff"/></svg>
+  <svg class="tri2" viewBox="0 0 100 100"><polygon points="50,5 95,95 5,95" fill="#01a65a"/></svg>
+  <div class="wrap hero-inner">
+    <div class="badge-rating"><span class="stars">★★★★</span><span style="color:#8aa0bc">★</span> 4.3 on Google</div>
+    <h1>Quality windows &amp; doors, <span>built right</span> the first time.</h1>
+    <p class="lead">AAA Advanced Windows &amp; Doors has supplied and installed windows, doors, mouldings and hardware for Abbotsford-area homes and businesses since 2007.</p>
+    <div class="hero-ctas">
+      <a class="btn-primary" href="tel:6048554444">Call 604-855-4444</a>
+      <a class="btn-ghost" href="#services">See our services</a>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="item"><span class="num">Since 2007</span><span class="lbl">17+ years in business</span></div>
+    <div class="item"><span class="num">4.3★ Google</span><span class="lbl">96 customer reviews</span></div>
+    <div class="item"><span class="num">25+ yrs</span><span class="lbl">senior staff experience</span></div>
+    <div class="item"><span class="num">Abbotsford</span><span class="lbl">locally based</span></div>
+  </div>
+</div>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <p class="eyebrow">What we install</p>
+    <h2 class="sec-title">Windows, doors &amp; hardware for the whole home</h2>
+    <p class="sec-sub">From a single replacement window to a full custom door package, handled by one team from measurement to install.</p>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="icn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="12" y1="3" x2="12" y2="21"/><line x1="3" y1="12" x2="21" y2="12"/></svg></div>
+        <h3>Custom Windows</h3>
+        <p>Energy-efficient vinyl and fiberglass windows, built to size for your home.</p>
+      </div>
+      <div class="svc-card">
+        <div class="icn"><svg viewBox="0 0 24 24"><path d="M5 21V5a2 2 0 0 1 2-2h8l4 4v14"/><line x1="15" y1="12" x2="15" y2="12.01"/></svg></div>
+        <h3>Entry &amp; Patio Doors</h3>
+        <p>Fiberglass and wood entry systems, sliding and patio doors.</p>
+      </div>
+      <div class="svc-card">
+        <div class="icn"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1"/><circle cx="15" cy="12" r="1"/></svg></div>
+        <h3>Interior &amp; Barn Doors</h3>
+        <p>Contemporary barn doors, interior doors, and barn door hardware.</p>
+      </div>
+      <div class="svc-card">
+        <div class="icn"><svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 17l9 4 9-4"/><path d="M3 12l9 4 9-4"/></svg></div>
+        <h3>Mouldings &amp; Hardware</h3>
+        <p>Finishing mouldings and hardware to match your doors and windows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="wrap why-grid">
+    <div>
+      <p class="eyebrow">How we work</p>
+      <h2 class="sec-title">One team, from measurement to install</h2>
+      <ul>
+        <li><span class="chk">✓</span> Customers say ownership stays personally involved, from initial measurements through to final delivery.</li>
+        <li><span class="chk">✓</span> Senior staff bring 25+ years of experience to every project.</li>
+        <li><span class="chk">✓</span> Help coordinating with other trades when a job needs it.</li>
+        <li><span class="chk">✓</span> Serving Abbotsford and the surrounding area since 2007.</li>
+      </ul>
+    </div>
+    <div class="stat-card">
+      <div class="row"><div><div class="n">2007</div><div class="l">Year founded</div></div><div><div class="n">17+</div><div class="l">Years in business</div></div></div>
+      <div class="row"><div><div class="n">25+</div><div class="l">Years, senior staff exp.</div></div><div><div class="n">4.3★</div><div class="l">Google, 96 reviews</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#6fe0ab;">What customers say</p>
+    <h2 class="sec-title">From our Google reviews</h2>
+    <p class="sec-sub">A few of the things customers have told us.</p>
+    <div class="rev-grid">
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p>"It all started with ownership, personally involved from initial measurements through to final delivery — going above and beyond to guide the project, even coordinating with other trades."</p>
+        <div class="src">— Google review</div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p>"Every detail was carefully discussed and handled, demonstrating outstanding customer service."</p>
+        <div class="src">— Google review</div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p>"The staff was kind and helpful. They answered our questions and helped us choose the right windows and doors. The work was done on time and everything looks nice and clean."</p>
+        <div class="src">— Google review</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section areas" id="areas">
+  <div class="wrap">
+    <p class="eyebrow">Service area</p>
+    <h2 class="sec-title">Based in Abbotsford</h2>
+    <p class="sec-sub" style="margin-left:auto;margin-right:auto;">Serving Abbotsford and the surrounding Fraser Valley. <em>(Confirm exact service area before this goes live.)</em></p>
+    <div class="chips">
+      <span class="chip">Abbotsford</span>
+      <span class="chip">Chilliwack</span>
+      <span class="chip">Langley</span>
+      <span class="chip">Mission</span>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" id="contact">
+  <h2>Ready to talk about your project?</h2>
+  <p>Call for a quote on your windows, doors, or hardware.</p>
+  <a class="btn-primary" href="tel:6048554444">Call 604-855-4444</a>
+</section>
+
+<section id="privacy">
+  <div class="wrap">
+    <h2>Privacy Policy</h2>
+    <p><em>Placeholder text — a BC PIPA-compliant policy written for your business is included when the site is built.</em></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+    <div class="priv-note">This page collects contact form submissions. A full privacy policy, compliant with BC's Personal Information Protection Act (PIPA), will be drafted specifically for your business as part of the finished site.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div class="logo-box"><img src="logo.webp" alt="AAA Advanced Windows & Doors Ltd."></div>
+      <div class="f-links">
+        <a href="tel:6048554444">604-855-4444</a>
+        <a href="mailto:info@aaawindows.ca">info@aaawindows.ca</a>
+        <a href="#privacy">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      &copy; 2026 AAA Advanced Windows &amp; Doors Ltd. · Design preview by Sharpline Digital — not a live website.
+    </div>
+  </div>
+</footer>
+
+<a class="call-bar" href="tel:6048554444">Call Now: 604-855-4444</a>
+
+</body>
+</html>
