@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Knowledge HVAC & Refrigeration | Abbotsford Heating, Cooling & Electrical</title>
+<style>
+  :root{
+    --navy:#1a2454;
+    --navy-dark:#121a3d;
+    --green:#8cc63f;
+    --green-dark:#6ea82b;
+    --paper:#f7f8fa;
+    --ink:#1c2230;
+    --muted:#5b6274;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px;}
+
+  /* Disclaimer banner */
+  .disclaimer{
+    background:#f7b733;
+    color:#2a2400;
+    font-size:13px;
+    line-height:1.5;
+    text-align:center;
+    padding:10px 16px;
+  }
+
+  /* Header */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:#fff;
+    border-bottom:1px solid #e7e8ec;
+  }
+  header.site .bar{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:10px 20px;max-width:1180px;margin:0 auto;gap:16px;
+  }
+  header.site img.logo{height:40px;width:auto;}
+  .call-btn{
+    background:var(--green);
+    color:var(--navy-dark);
+    font-weight:700;
+    padding:10px 18px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:15px;
+    white-space:nowrap;
+  }
+
+  /* Hero */
+  .hero{
+    position:relative;
+    color:#fff;
+    overflow:hidden;
+  }
+  .hero picture, .hero img{
+    width:100%;height:520px;object-fit:cover;object-position:center 40%;
+    display:block;
+  }
+  .hero .scrim{
+    position:absolute;inset:0;
+    background:linear-gradient(100deg, rgba(18,26,61,0.95) 0%, rgba(18,26,61,0.80) 38%, rgba(18,26,61,0.35) 72%, rgba(18,26,61,0.15) 100%);
+  }
+  .hero .content{
+    position:absolute;inset:0;
+    display:flex;flex-direction:column;justify-content:center;
+    padding:32px 20px;
+  }
+  .hero .content .inner{max-width:1180px;margin:0 auto;width:100%;}
+  .star-badge{
+    display:inline-flex;align-items:center;gap:6px;
+    background:rgba(255,255,255,0.12);
+    border:1px solid rgba(255,255,255,0.3);
+    padding:6px 12px;border-radius:999px;
+    font-size:13px;font-weight:600;margin-bottom:16px;
+  }
+  .star-badge .stars{color:#ffce45;letter-spacing:1px;}
+  .hero h1{
+    font-size:38px;line-height:1.15;margin:0 0 14px;font-weight:800;
+    max-width:620px;
+  }
+  .hero p.sub{
+    font-size:17px;line-height:1.6;max-width:540px;color:#dfe3f0;margin:0 0 24px;
+  }
+  .hero .ctas{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:13px 24px;border-radius:8px;font-weight:700;
+    text-decoration:none;font-size:15px;
+  }
+  .btn.primary{background:var(--green);color:var(--navy-dark);}
+  .btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,0.6);color:#fff;}
+
+  /* Trust strip */
+  .trust{
+    background:var(--navy-dark);
+    color:#fff;
+    padding:22px 0;
+  }
+  .trust .row{
+    display:flex;flex-wrap:wrap;gap:24px;justify-content:space-around;
+    text-align:center;
+  }
+  .trust .item .big{font-size:24px;font-weight:800;color:var(--green);}
+  .trust .item .label{font-size:13px;color:#c7cbdd;margin-top:2px;}
+
+  /* Section generic */
+  section{padding:56px 0;}
+  h2.h{font-size:28px;margin:0 0 8px;color:var(--navy);font-weight:800;}
+  p.lede{color:var(--muted);font-size:16px;max-width:620px;margin:0 0 32px;}
+
+  /* Services grid */
+  .services-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
+  }
+  .svc-card{
+    background:#fff;border:1px solid #e7e8ec;border-radius:12px;
+    padding:22px 18px;text-align:left;
+  }
+  .svc-card .ico{
+    width:42px;height:42px;border-radius:10px;background:var(--navy);
+    display:flex;align-items:center;justify-content:center;color:var(--green);
+    font-weight:800;font-size:18px;margin-bottom:14px;
+  }
+  .svc-card h3{font-size:17px;margin:0 0 6px;color:var(--navy);}
+  .svc-card p{font-size:14px;color:var(--muted);margin:0;line-height:1.5;}
+
+  /* Work / story section */
+  .work{
+    background:#fff;
+  }
+  .work .grid{
+    display:grid;grid-template-columns:0.9fr 1.1fr;gap:40px;align-items:center;
+  }
+  .work img{border-radius:14px;width:100%;height:auto;}
+  .work .copy h2{margin-top:0;}
+  .work .copy p{color:var(--muted);font-size:16px;line-height:1.7;}
+  .checklist{list-style:none;padding:0;margin:20px 0 0;}
+  .checklist li{
+    padding-left:28px;position:relative;margin-bottom:10px;color:var(--ink);font-size:15px;
+  }
+  .checklist li:before{
+    content:"✓";position:absolute;left:0;top:0;
+    color:#fff;background:var(--green);
+    width:18px;height:18px;border-radius:50%;
+    font-size:12px;line-height:18px;text-align:center;font-weight:800;
+  }
+
+  /* Reviews */
+  .reviews{background:var(--navy);color:#fff;}
+  .reviews h2{color:#fff;}
+  .reviews p.lede{color:#c7cbdd;}
+  .rev-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  .rev-card{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:12px;padding:22px;
+  }
+  .rev-card .stars{color:#ffce45;font-size:14px;margin-bottom:10px;letter-spacing:1px;}
+  .rev-card p{font-size:14.5px;line-height:1.6;color:#e7e9f3;margin:0 0 12px;}
+  .rev-card .who{font-size:13px;color:#aab0c8;font-weight:600;}
+
+  /* Service areas */
+  .areas{text-align:center;}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:10px;}
+  .chip{
+    border:1.5px solid var(--green-dark);
+    color:var(--navy);
+    padding:8px 16px;border-radius:999px;font-size:13.5px;font-weight:700;
+  }
+
+  /* CTA band */
+  .cta-band{
+    background:var(--green);
+    text-align:center;
+  }
+  .cta-band h2{color:var(--navy-dark);margin:0 0 10px;}
+  .cta-band p{color:#1f3300;margin:0 0 22px;font-size:16px;}
+  .cta-band .btn.primary{background:var(--navy-dark);color:#fff;}
+
+  /* Privacy */
+  #privacy{background:#fff;}
+  #privacy h2{font-size:22px;}
+  #privacy .box{
+    background:var(--paper);border:1px solid #e7e8ec;border-radius:10px;
+    padding:22px;font-size:14px;color:var(--muted);line-height:1.7;
+  }
+  #privacy .note{
+    margin-top:14px;font-size:13px;color:#8a1f1f;background:#fdecec;
+    border:1px solid #f3c6c6;padding:10px 14px;border-radius:8px;
+  }
+
+  /* Footer */
+  footer{background:var(--navy-dark);color:#c7cbdd;padding:40px 0 100px;}
+  footer .cols{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px;}
+  footer .logo{background:#fff;display:inline-block;padding:10px 16px;border-radius:8px;margin-bottom:14px;}
+  footer .logo img{height:34px;}
+  footer h4{color:#fff;font-size:14px;margin:0 0 12px;}
+  footer p, footer a{font-size:13.5px;line-height:1.9;color:#c7cbdd;text-decoration:none;}
+  footer .fine{margin-top:28px;font-size:12px;color:#7f87a3;border-top:1px solid rgba(255,255,255,0.1);padding-top:18px;}
+
+  /* Sticky mobile call bar */
+  .call-bar{
+    position:fixed;bottom:0;left:0;right:0;
+    background:var(--navy-dark);
+    display:none;
+    padding:12px 16px;
+    z-index:60;
+    box-shadow:0 -4px 16px rgba(0,0,0,0.2);
+  }
+  .call-bar a{
+    display:block;text-align:center;background:var(--green);color:var(--navy-dark);
+    font-weight:800;padding:13px;border-radius:8px;text-decoration:none;font-size:16px;
+  }
+
+  @media (max-width:860px){
+    .services-grid{grid-template-columns:repeat(2,1fr);}
+    .work .grid{grid-template-columns:1fr;}
+    .rev-grid{grid-template-columns:1fr;}
+    footer .cols{grid-template-columns:1fr;}
+    .hero h1{font-size:28px;}
+    .hero picture, .hero img{height:460px;}
+    .hero .content{padding:24px 16px;}
+    .call-bar{display:block;}
+    body{padding-bottom:0;}
+    header.site .bar{padding:10px 16px;gap:10px;}
+    header.site img.logo{height:30px;}
+    .call-btn{padding:9px 12px;font-size:13px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclaimer">
+  Design preview prepared for Knowledge HVAC &amp; Refrigeration by Sharpline Digital — not a live website. Photos are from Knowledge HVAC &amp; Refrigeration's own site; wording and details to be confirmed with the owner.
+</div>
+
+<header class="site">
+  <div class="bar">
+    <img class="logo" src="images/logo.webp" alt="Knowledge HVAC & Refrigeration Ltd logo" width="170" height="33">
+    <a class="call-btn" href="tel:7785225669">📞 (778) 522-5669</a>
+  </div>
+</header>
+
+<div class="hero">
+  <link rel="preload" as="image" href="images/hero.webp" fetchpriority="high">
+  <img src="images/hero.webp" srcset="images/hero-560.webp 560w, images/hero.webp 1600w" sizes="100vw" alt="Knowledge HVAC & Refrigeration shop and service vans, Abbotsford BC" width="1600" height="762" fetchpriority="high">
+  <div class="scrim"></div>
+  <div class="content">
+    <div class="inner">
+      <div class="star-badge"><span class="stars">★★★★★</span> 4.9 stars · 236 Google reviews</div>
+      <h1>Abbotsford's trusted name in heating, cooling &amp; electrical</h1>
+      <p class="sub">Furnace and AC repair, installs, and electrical work for homes and businesses across the Fraser Valley — done by a team customers actually name by name.</p>
+      <div class="ctas">
+        <a class="btn primary" href="tel:7785225669">Call (778) 522-5669</a>
+        <a class="btn ghost" href="#services">See our services</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="trust">
+  <div class="wrap row">
+    <div class="item"><div class="big">4.9★</div><div class="label">236 Google reviews</div></div>
+    <div class="item"><div class="big">Mon–Sat</div><div class="label">8am–4pm (Sat to 2pm)</div></div>
+    <div class="item"><div class="big">Abbotsford</div><div class="label">Serving the Fraser Valley</div></div>
+    <div class="item"><div class="big">Licensed</div><div class="label">Heating · Cooling · Electrical</div></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2 class="h">What we do</h2>
+    <p class="lede">Residential and commercial service, repair, and installation — one call covers it.</p>
+    <div class="services-grid">
+      <div class="svc-card">
+        <div class="ico">H</div>
+        <h3>Heating</h3>
+        <p>Furnace repair, service, and installation to keep your home warm through the winter.</p>
+      </div>
+      <div class="svc-card">
+        <div class="ico">C</div>
+        <h3>Cooling</h3>
+        <p>AC repair and installation, including same-day emergency calls in the summer heat.</p>
+      </div>
+      <div class="svc-card">
+        <div class="ico">E</div>
+        <h3>Electrical</h3>
+        <p>Licensed electrical work for homes and businesses across the Fraser Valley.</p>
+      </div>
+      <div class="svc-card">
+        <div class="ico">R</div>
+        <h3>Refrigeration</h3>
+        <p>Commercial refrigeration repair and maintenance to keep your business running.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="work">
+  <div class="wrap grid">
+    <img src="images/install.webp" loading="lazy" width="700" height="700" alt="Furnace installation by Knowledge HVAC & Refrigeration" style="aspect-ratio:1/1;height:auto;">
+    <div class="copy">
+      <h2 class="h">Real techs, real work, no run-around</h2>
+      <p>Customers don't just say "the company showed up" — they name the person who did the job. Reviews consistently call out technicians like Joel and Odaine by name for showing up on time, explaining the problem clearly, and fixing it right the first time.</p>
+      <ul class="checklist">
+        <li>Clear explanations and upfront pricing before any work starts</li>
+        <li>Same-day emergency service for AC and furnace breakdowns</li>
+        <li>Residential and commercial heating, cooling, electrical &amp; refrigeration</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <h2 class="h">What customers say</h2>
+    <p class="lede">Real excerpts from Google reviews.</p>
+    <div class="rev-grid">
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p>"Joel arrived on time, was professional, and took the time to explain what they were doing in a way that was easy to understand... I appreciated their honesty and transparency, especially when it came to pricing."</p>
+        <div class="who">— Google review</div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p>"Our AC quit working on a hot Saturday. In about 3 hours the friendly tech arrived and solved the problem in about an hour. He had the required spare part with him and explained everything clearly."</p>
+        <div class="who">— Google review</div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p>"The team from Knowledge did a great job repairing both of our reaching coolers that weren't reaching down to temperature. Highly recommend these guys."</p>
+        <div class="who">— Google review</div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p>"Odaine came to help my business today and was very efficient and knowledgeable. Great communication and no-nonsense. Highly recommend, thank you Odaine!"</p>
+        <div class="who">— Google review</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="areas">
+  <div class="wrap">
+    <h2 class="h">Proudly serving the Fraser Valley</h2>
+    <p class="lede" style="margin-left:auto;margin-right:auto;">Based in Abbotsford, on the road across the valley every day.</p>
+    <div class="chips">
+      <span class="chip">Abbotsford</span>
+      <span class="chip">Langley</span>
+      <span class="chip">Surrey</span>
+      <span class="chip">Chilliwack</span>
+      <span class="chip">Mission</span>
+      <span class="chip">Maple Ridge</span>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="wrap" style="padding:50px 20px;">
+    <h2 class="h" style="color:inherit;">Furnace acting up? AC on the fritz?</h2>
+    <p>Call now and talk to a real person — same-day service available.</p>
+    <a class="btn primary" href="tel:7785225669">Call (778) 522-5669</a>
+  </div>
+</div>
+
+<section id="privacy">
+  <div class="wrap" style="max-width:760px;">
+    <h2 class="h">Privacy Policy</h2>
+    <div class="box">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. This placeholder text stands in for a full policy covering what information is collected through this site's contact form and how it is used and stored.</p>
+    </div>
+    <p class="note">Placeholder text — a BC PIPA-compliant policy written for your business is included when the site is built.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="logo"><img src="images/logo.webp" alt="Knowledge HVAC & Refrigeration Ltd logo" width="150" height="29" loading="lazy"></div>
+        <p>#5 – 30445 Progressive Way<br>Abbotsford, BC V2T 6W3</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:7785225669">(778) 522-5669</a></p>
+        <p><a href="mailto:info@knowledgehvacr.ca">info@knowledgehvacr.ca</a></p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon–Fri: 8am–4pm<br>Sat: 8am–2pm<br>Sun: Closed</p>
+        <p><a href="#privacy">Privacy Policy</a></p>
+      </div>
+    </div>
+    <div class="fine">© 2026 Knowledge HVAC &amp; Refrigeration Ltd. This is a design preview, not the live Knowledge HVAC &amp; Refrigeration website.</div>
+  </div>
+</footer>
+
+<div class="call-bar">
+  <a href="tel:7785225669">📞 Call Knowledge HVAC — (778) 522-5669</a>
+</div>
+
+</body>
+</html>
