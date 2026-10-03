@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Holton Plumbing | Mission & Fraser Valley</title>
+<link rel="preload" as="image" href="about-roughin.webp" fetchpriority="high">
+<style>
+:root{
+  --navy:#1d3a63;
+  --navy-dark:#13263f;
+  --navy-light:#224574;
+  --orange:#f5a425;
+  --orange-dark:#d98a10;
+  --ink:#1b2430;
+  --paper:#ffffff;
+  --cream:#f7f7f5;
+  --line:#e4e2dc;
+}
+*{box-sizing:border-box;}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.5;}
+img{display:block;max-width:100%;}
+a{color:inherit;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+
+/* Disclaimer banner */
+.disclaimer{background:#ffd84d;color:#3a2e00;font-size:13px;text-align:center;padding:10px 16px;font-weight:600;}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:var(--navy-dark);border-bottom:3px solid var(--orange);}
+.header-inner{max-width:1120px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px;}
+.logo-img{height:48px;width:auto;border-radius:6px;}
+nav{display:flex;gap:26px;align-items:center;}
+nav a{color:#fff;text-decoration:none;font-size:15px;font-weight:600;}
+nav a:hover{color:var(--orange);}
+.call-btn{background:var(--orange);color:#231600;font-weight:800;padding:11px 20px;border-radius:7px;text-decoration:none;font-size:15px;white-space:nowrap;}
+.call-btn:hover{background:var(--orange-dark);}
+@media(max-width:820px){ nav{display:none;} }
+
+/* Hero */
+.hero{background:linear-gradient(135deg,var(--navy-dark),var(--navy-light) 70%);color:#fff;padding:56px 0 64px;}
+.badge-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:22px;}
+.badge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:30px;padding:7px 16px;font-size:14px;font-weight:700;display:inline-flex;align-items:center;gap:6px;}
+.stars{color:var(--orange);letter-spacing:2px;}
+.hero h1{font-size:44px;line-height:1.1;margin:0 0 18px;max-width:760px;font-weight:800;}
+.hero p.sub{font-size:18px;max-width:640px;color:#dce3ee;margin:0 0 30px;}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;}
+.btn{display:inline-block;padding:14px 26px;border-radius:8px;font-weight:800;font-size:16px;text-decoration:none;}
+.btn-primary{background:var(--orange);color:#231600;}
+.btn-primary:hover{background:var(--orange-dark);}
+.btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6);}
+.btn-outline:hover{border-color:#fff;}
+
+/* Trust strip */
+.trust{background:var(--cream);border-bottom:1px solid var(--line);padding:26px 0;}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center;}
+.trust-item .num{font-size:22px;font-weight:800;color:var(--navy);}
+.trust-item .label{font-size:13.5px;color:#5a6472;margin-top:2px;}
+@media(max-width:760px){ .trust-grid{grid-template-columns:repeat(2,1fr);} }
+
+/* Section headings */
+section{padding:60px 0;}
+.eyebrow{color:var(--orange-dark);font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin:0 0 8px;}
+h2{font-size:30px;margin:0 0 14px;color:var(--navy-dark);}
+.lead{color:#555;font-size:16.5px;max-width:640px;margin:0 0 36px;}
+
+/* Services */
+.services{background:var(--paper);}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.svc-card{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:26px 20px;text-align:center;}
+.svc-icon{width:52px;height:52px;border-radius:50%;background:var(--navy);color:var(--orange);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:24px;}
+.svc-card h3{font-size:16.5px;margin:0 0 6px;color:var(--navy-dark);}
+.svc-card p{font-size:14px;color:#60697a;margin:0;}
+@media(max-width:860px){ .svc-grid{grid-template-columns:repeat(2,1fr);} }
+
+/* About / owner */
+.about{background:var(--navy-dark);color:#fff;}
+.about-grid{display:grid;grid-template-columns:420px 1fr;gap:46px;align-items:center;}
+.about-photo{border-radius:14px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.4);}
+.about-photo img{width:100%;height:auto;object-fit:cover;}
+.about-cap{font-size:12.5px;color:#9fb0c7;margin-top:10px;}
+.about h2{color:#fff;}
+.about .lead{color:#c9d3e1;}
+.about-quote{border-left:4px solid var(--orange);padding-left:18px;margin:22px 0;font-size:17px;font-style:italic;color:#e4e9f1;}
+.about-signature{font-weight:800;color:#fff;}
+@media(max-width:860px){ .about-grid{grid-template-columns:1fr;} .about-photo{max-width:340px;margin:0 auto;} }
+
+/* Reviews */
+.reviews{background:var(--cream);}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.rev-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;}
+.rev-card .stars{color:var(--orange);margin-bottom:10px;display:block;}
+.rev-card p{font-size:14.5px;color:#3a4150;margin:0 0 14px;}
+.rev-card .who{font-size:13.5px;font-weight:700;color:var(--navy);}
+@media(max-width:860px){ .rev-grid{grid-template-columns:1fr;} }
+
+/* Service area */
+.areas{text-align:center;}
+.chip-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px;}
+.chip{background:var(--cream);border:1px solid var(--line);border-radius:30px;padding:8px 18px;font-size:14px;font-weight:600;color:var(--navy);}
+.areas-note{font-size:13px;color:#8a92a0;margin-top:18px;}
+
+/* CTA band */
+.cta-band{background:linear-gradient(135deg,var(--orange-dark),var(--orange));color:#231600;text-align:center;padding:52px 0;}
+.cta-band h2{color:#231600;margin-bottom:10px;}
+.cta-band p{font-size:16px;margin:0 0 26px;}
+.cta-band .btn-primary{background:var(--navy-dark);color:#fff;}
+.cta-band .btn-primary:hover{background:var(--navy);}
+
+/* Privacy */
+#privacy{background:var(--paper);border-top:1px solid var(--line);}
+#privacy h2{font-size:22px;}
+#privacy p{font-size:13.5px;color:#777;max-width:760px;}
+
+/* Footer */
+footer{background:var(--navy-dark);color:#cdd6e3;padding:50px 0 100px;font-size:14px;}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:30px;}
+.foot-grid h4{color:#fff;font-size:14px;margin:0 0 14px;}
+.foot-grid a{color:#cdd6e3;text-decoration:none;display:block;margin-bottom:9px;}
+.foot-grid a:hover{color:var(--orange);}
+.foot-logo{height:42px;margin-bottom:16px;border-radius:5px;}
+.foot-social{display:flex;gap:12px;margin-top:16px;}
+.foot-social a{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:14px;}
+.foot-bottom{text-align:center;padding-top:30px;margin-top:30px;border-top:1px solid rgba(255,255,255,.12);font-size:12.5px;color:#8b97a9;}
+@media(max-width:860px){ .foot-grid{grid-template-columns:1fr 1fr;} }
+
+/* Sticky mobile call bar */
+.call-bar{display:none;}
+@media(max-width:820px){
+  .call-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--orange);padding:12px 16px;justify-content:center;align-items:center;gap:8px;font-weight:800;color:#231600;text-decoration:none;font-size:16px;box-shadow:0 -4px 14px rgba(0,0,0,.2);}
+  .hero h1{font-size:32px;}
+  .hero p.sub{font-size:16px;}
+}
+</style>
+</head>
+<body>
+
+<div class="disclaimer">Design preview prepared for Holton Plumbing by Sharpline Digital — not a live website. Photos are from Holton Plumbing's own site/materials; wording and details to be confirmed with the owner.</div>
+
+<header>
+  <div class="header-inner">
+    <img class="logo-img" src="logo.webp" alt="Holton Plumbing logo" width="155" height="48">
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="call-btn" href="tel:7788235243">📞 778-823-5243</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="badge-row">
+      <span class="badge"><span class="stars">★★★★★</span> 4.9 (84 Google reviews)</span>
+      <span class="badge">Red Seal Certified</span>
+      <span class="badge">Serving Mission &amp; Fraser Valley since 1984</span>
+    </div>
+    <h1>Your Trusted Plumbing Experts in Mission &amp; Fraser Valley</h1>
+    <p class="sub">Red Seal certified plumbing and drain cleaning, serving Mission, Maple Ridge, Abbotsford, and nearby communities since 1984. Honest advice, quality workmanship, and fast, dependable service — done the right way.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:7788235243">Call Now</a>
+      <a class="btn btn-outline" href="#contact">Request Service</a>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><div class="num">4.9★</div><div class="label">84 Google reviews</div></div>
+    <div class="trust-item"><div class="num">1984</div><div class="label">Serving the valley since</div></div>
+    <div class="trust-item"><div class="num">24/7</div><div class="label">Emergency calls answered</div></div>
+    <div class="trust-item"><div class="num">Red Seal</div><div class="label">Certified tradesman</div></div>
+  </div>
+</div>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <p class="eyebrow">What we do</p>
+    <h2>Residential &amp; commercial plumbing</h2>
+    <p class="lead">Straightforward plumbing and drain work for homes and businesses across the Fraser Valley.</p>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-icon">🔧</div>
+        <h3>Residential Plumbing</h3>
+        <p>Repairs, fixture installs, and everyday plumbing fixes done right the first time.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">🚿</div>
+        <h3>Residential Drain Cleaning</h3>
+        <p>Clogged or slow drains cleared fast, with honest advice on what's actually needed.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">🏢</div>
+        <h3>Commercial Plumbing</h3>
+        <p>Reliable plumbing service for local businesses that can't afford downtime.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">🛠️</div>
+        <h3>Commercial Drain Cleaning</h3>
+        <p>Scheduled or emergency drain service to keep your business running.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <img class="about-photo-img" src="about-roughin.webp" alt="Rough-in plumbing work by Holton Plumbing" width="440" height="588" loading="lazy" style="border-radius:14px;box-shadow:0 18px 40px rgba(0,0,0,.4);">
+      <p class="about-cap">Real rough-in work from a Holton Plumbing job site.</p>
+    </div>
+    <div>
+      <p class="eyebrow">Owner-operated since 1984</p>
+      <h2>Meet Trevor Holton</h2>
+      <p class="lead">Trevor became Red Seal certified at just 19 and now runs the business his family started in 1984 — originally C&amp;R Holton Mechanical in Maple Ridge, rebranded and relocated to Mission in 2013.</p>
+      <div class="about-quote">
+        "Trevor kept me in the loop, explained everything, answered all my questions and delivered as quickly as humanly possible." — Google review
+      </div>
+      <p>Customers consistently point to the same things: he shows up when he says he will, explains the work plainly, and charges fairly for it. That reputation is what built 84 five-star-average reviews over the years.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <p class="eyebrow">What customers say</p>
+    <h2>84 reviews, 4.9 stars</h2>
+    <p class="lead">A few of the real reviews from Holton Plumbing's Google Business Profile.</p>
+    <div class="rev-grid">
+      <div class="rev-card">
+        <span class="stars">★★★★★</span>
+        <p>"I had a plumbing issue that continued on for many years and was never solved by previous plumbers. I called Holton Plumbing and they came out the same day, located the issue, and resolved it all on the same day."</p>
+        <div class="who">Google review</div>
+      </div>
+      <div class="rev-card">
+        <span class="stars">★★★★★</span>
+        <p>"Trevor is knowledgeable and hard working. Always goes the extra mile! He always comes when he says he will and gets the work done fast and well. Would highly recommend!"</p>
+        <div class="who">Google review</div>
+      </div>
+      <div class="rev-card">
+        <span class="stars">★★★★★</span>
+        <p>"A less honest tradesman could've charged me for unnecessary work to my side of the water main — Trevor suggested it may be the city's issue, and he was right. No surprises."</p>
+        <div class="who">Google review</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="areas">
+  <div class="wrap">
+    <p class="eyebrow">Service area</p>
+    <h2 style="max-width:none;">Mission &amp; the Fraser Valley</h2>
+    <div class="chip-row">
+      <span class="chip">Mission</span>
+      <span class="chip">Maple Ridge</span>
+      <span class="chip">Abbotsford</span>
+      <span class="chip">Fraser Valley</span>
+    </div>
+    <p class="areas-note">Service area shown as described on Holton Plumbing's own site — worth confirming exact boundaries before this goes live.</p>
+  </div>
+</section>
+
+<div class="cta-band" id="contact">
+  <div class="wrap">
+    <h2>Need a plumber in Mission today?</h2>
+    <p>Holton Plumbing answers emergency calls 24/7 — 778-823-5243</p>
+    <a class="btn btn-primary" href="tel:7788235243">Call 778-823-5243</a>
+  </div>
+</div>
+
+<section id="privacy">
+  <div class="wrap">
+    <h2>Privacy Policy</h2>
+    <p><em>Placeholder text — a BC PIPA-compliant policy written for your business is included when the site is built.</em></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <img class="foot-logo" src="logo.webp" alt="Holton Plumbing" width="135" height="42">
+      <p style="color:#9fb0c7;font-size:13px;max-width:240px;">Red Seal certified plumbing and drain cleaning, serving Mission and the Fraser Valley since 1984.</p>
+      <div class="foot-social">
+        <a href="https://facebook.com/profile.php?id=61572350441990" aria-label="Facebook">f</a>
+        <a href="https://linkedin.com/in/holton-plumbing-28233679" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#services">Services</a>
+      <a href="#about">About Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <a href="#services">Residential Plumbing</a>
+      <a href="#services">Residential Drain Cleaning</a>
+      <a href="#services">Commercial Plumbing</a>
+      <a href="#services">Commercial Drain Cleaning</a>
+    </div>
+    <div>
+      <h4>Contact Us</h4>
+      <a href="tel:7788235243">778-823-5243</a>
+      <a href="mailto:holtonplumbing@hotmail.com">holtonplumbing@hotmail.com</a>
+      <a href="#" style="margin-bottom:0;">32580 Badger Ave<br>Mission, BC V2V 5H6</a>
+    </div>
+  </div>
+  <div class="foot-bottom">© 2026 Holton Plumbing. Design preview by Sharpline Digital — <a href="#privacy" style="display:inline;color:#9fb0c7;text-decoration:underline;">Privacy Policy</a></div>
+</footer>
+
+<a class="call-bar" href="tel:7788235243">📞 Call 778-823-5243</a>
+
+</body>
+</html>
