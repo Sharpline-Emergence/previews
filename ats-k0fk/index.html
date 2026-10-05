@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Arsenault Tree Service — Professional Arborist Services in Mission, BC</title>
+<link rel="preload" as="image" href="hero-climb.webp" fetchpriority="high">
+<style>
+  :root{
+    --ink:#1C1E1B;
+    --ink2:#262924;
+    --orange:#F1592A;
+    --orange2:#D6471C;
+    --cream:#FAFAF7;
+    --sub:#5A5F58;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--cream);line-height:1.55;
+  }
+  img{display:block;max-width:100%;}
+  a{color:inherit;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+
+  .disclaimer{
+    background:#fff6d8;color:#5c4a00;font-size:13px;text-align:center;
+    padding:10px 16px;border-bottom:1px solid #f0dca0;
+  }
+
+  header{background:var(--ink);position:sticky;top:0;z-index:40;border-bottom:1px solid rgba(255,255,255,.08);}
+  .header-inner{
+    max-width:1120px;margin:0 auto;padding:14px 24px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .logo-img{height:30px;width:auto;filter:brightness(0) invert(1);}
+  .call-btn{
+    background:var(--orange);color:#fff;font-weight:700;
+    padding:10px 18px;border-radius:8px;text-decoration:none;font-size:15px;white-space:nowrap;
+  }
+
+  .hero{background:var(--ink);color:#fff;padding:0;}
+  .hero-grid{
+    max-width:1120px;margin:0 auto;padding:60px 24px;
+    display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center;
+  }
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    background:rgba(241,89,42,.15);border:1px solid rgba(241,89,42,.4);
+    color:var(--orange);font-weight:700;font-size:13.5px;
+    padding:7px 14px;border-radius:999px;margin-bottom:22px;
+  }
+  .hero h1{font-size:42px;line-height:1.12;font-weight:800;margin-bottom:18px;}
+  .hero h1 span{color:var(--orange);}
+  .hero p.lead{font-size:17.5px;color:#cfcfcf;margin-bottom:30px;}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--orange);color:#fff;font-weight:700;
+    padding:14px 26px;border-radius:9px;text-decoration:none;font-size:16px;
+  }
+  .btn-secondary{
+    background:transparent;color:#fff;font-weight:600;
+    padding:14px 26px;border-radius:9px;text-decoration:none;font-size:16px;
+    border:1px solid rgba(255,255,255,.3);
+  }
+  .hero-stats{display:flex;gap:32px;margin-top:40px;flex-wrap:wrap;}
+  .hero-stat b{display:block;font-size:26px;color:#fff;}
+  .hero-stat span{font-size:13px;color:#aaa;}
+  .hero-photo-wrap{position:relative;}
+  .hero-photo{
+    width:100%;border-radius:18px;overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.4);
+  }
+  .hero-photo img{width:100%;height:auto;display:block;}
+  .hero-caption{
+    position:absolute;bottom:-16px;left:16px;background:var(--orange);color:#fff;
+    font-weight:700;font-size:13.5px;padding:8px 16px;border-radius:8px;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+  }
+
+  .trust{background:#fff;border-bottom:1px solid #eee;padding:22px 0;}
+  .trust .wrap{display:flex;gap:40px;flex-wrap:wrap;align-items:center;justify-content:center;text-align:center;}
+  .trust-item{font-size:14.5px;color:var(--sub);font-weight:600;}
+  .trust-item b{color:var(--ink);}
+
+  .section{padding:68px 0;}
+  .section-head{text-align:center;max-width:620px;margin:0 auto 44px;}
+  .eyebrow{color:var(--orange2);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}
+  .section-head h2{font-size:32px;font-weight:800;color:var(--ink);}
+  .section-head p{color:var(--sub);margin-top:12px;font-size:16px;}
+
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .service-card{background:#fff;border:1px solid #ececec;border-radius:14px;padding:28px 24px;}
+  .service-icon{
+    width:46px;height:46px;border-radius:10px;background:rgba(241,89,42,.12);
+    display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:22px;
+  }
+  .service-card h3{font-size:18px;font-weight:700;margin-bottom:8px;color:var(--ink);}
+  .service-card p{font-size:14.5px;color:var(--sub);}
+
+  .about{background:var(--ink);color:#fff;}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+  .about h2{font-size:30px;font-weight:800;margin-bottom:18px;}
+  .about p{color:#c9ccc7;font-size:16px;margin-bottom:16px;}
+  .checklist{list-style:none;}
+  .checklist li{
+    display:flex;gap:12px;padding:14px 0;border-top:1px solid rgba(255,255,255,.1);
+    font-size:15.5px;color:#e2e4e0;
+  }
+  .checklist li:first-child{border-top:none;}
+  .checklist .tick{
+    width:22px;height:22px;flex:none;border-radius:50%;background:var(--orange);
+    color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;
+  }
+
+  .reviews-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  .review-card{background:#fff;border:1px solid #ececec;border-radius:14px;padding:26px;}
+  .stars{color:var(--orange2);font-size:15px;margin-bottom:12px;letter-spacing:2px;}
+  .review-card p{font-size:15px;color:var(--ink);margin-bottom:14px;}
+  .review-attr{font-size:13.5px;color:var(--sub);font-weight:600;}
+
+  .areas{background:#fff;}
+  .area-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+  .chip{
+    background:#f1efe8;color:var(--ink);font-size:14px;font-weight:600;
+    padding:9px 18px;border-radius:999px;border:1px solid #e5e1d5;
+  }
+  .areas-note{text-align:center;color:var(--sub);font-size:13.5px;margin-top:18px;}
+
+  .cta-band{background:var(--orange);color:#fff;text-align:center;padding:56px 0;}
+  .cta-band h2{font-size:30px;font-weight:800;margin-bottom:14px;}
+  .cta-band p{font-size:16px;margin-bottom:26px;opacity:.92;}
+  .btn-dark{
+    background:var(--ink);color:#fff;font-weight:700;padding:15px 30px;
+    border-radius:9px;text-decoration:none;font-size:16px;display:inline-block;
+  }
+
+  #privacy{background:#fff;border-top:1px solid #eee;}
+  #privacy h2{font-size:24px;font-weight:800;color:var(--ink);margin-bottom:16px;}
+  #privacy p{color:var(--sub);font-size:14.5px;margin-bottom:12px;max-width:760px;}
+
+  footer{background:var(--ink);color:#aaa;padding:48px 0 100px;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:32px;}
+  .footer-logo{height:28px;margin-bottom:14px;filter:brightness(0) invert(1);}
+  footer h4{color:#fff;font-size:14px;font-weight:700;margin-bottom:14px;}
+  footer a{display:block;color:#aaa;text-decoration:none;font-size:14.5px;margin-bottom:10px;}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+
+  .call-bar{
+    position:fixed;bottom:0;left:0;right:0;background:var(--ink);
+    padding:12px 18px;display:none;z-index:50;box-shadow:0 -4px 16px rgba(0,0,0,.2);
+  }
+  .call-bar a{
+    display:block;background:var(--orange);color:#fff;text-align:center;
+    font-weight:700;padding:13px;border-radius:9px;text-decoration:none;font-size:16px;
+  }
+
+  @media(max-width:860px){
+    .hero-grid{grid-template-columns:1fr;padding-top:44px;}
+    .hero-photo-wrap{order:-1;max-width:360px;margin:0 auto;}
+    .hero h1{font-size:32px;}
+    .about-grid{grid-template-columns:1fr;}
+    .services-grid{grid-template-columns:1fr 1fr;}
+    .reviews-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr;}
+  }
+  @media(max-width:600px){
+    .services-grid{grid-template-columns:1fr;}
+    .hero-stats{gap:24px;}
+    .call-bar{display:block;}
+    body{padding-bottom:70px;}
+  }
+  @media(max-width:400px){
+    .header-inner{padding:12px 16px;gap:10px;}
+    .logo-img{height:24px;}
+    .call-btn{padding:9px 14px;font-size:13.5px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclaimer">Design preview prepared for Arsenault Tree Service by Sharpline Digital — not a live website. Photo is from Arsenault's own site; wording and details to be confirmed with the owner.</div>
+
+<header>
+  <div class="header-inner">
+    <img class="logo-img" src="logo.webp" alt="Arsenault Tree Service logo" width="150" height="22">
+    <a class="call-btn" href="tel:6048208842">Call (604) 820-8842</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-badge">★★★★★ 5.0 rating · 122 Google reviews</div>
+      <h1>Tree removal &amp; pruning done <span>right</span> by Vince and his crew</h1>
+      <p class="lead">ISA Certified Arborist services for Mission &amp; the Fraser Valley — careful work, honest quotes, and a clean yard when they leave.</p>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="tel:6048208842">Call (604) 820-8842</a>
+        <a class="btn-secondary" href="#contact">Get a free quote</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>5.0★</b><span>122 Google reviews</span></div>
+        <div class="hero-stat"><b>ISA</b><span>Certified Arborist</span></div>
+        <div class="hero-stat"><b>Mission, BC</b><span>Locally based</span></div>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo">
+        <img src="hero-climb.webp" alt="Arsenault Tree Service crew member climbing a large tree for removal" width="480" height="853" fetchpriority="high">
+      </div>
+      <div class="hero-caption">Vince's crew on a real job</div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-item"><b>5.0★ rating</b> — 122 Google reviews</div>
+    <div class="trust-item"><b>ISA Certified Arborist</b> on staff</div>
+    <div class="trust-item"><b>Locally based</b> in Mission, BC</div>
+  </div>
+</div>
+
+<section class="section" id="services" loading="lazy">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">What we do</div>
+      <h2>Tree services for Mission &amp; the Fraser Valley</h2>
+      <p>From full removals to seasonal shaping, handled with care around your home, power lines, and neighbours.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🌲</div>
+        <h3>Tree Removal</h3>
+        <p>Large or hazardous tree removal, including trees leaning toward homes or power lines.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">✂️</div>
+        <h3>Pruning &amp; Shaping</h3>
+        <p>Careful climbing and shaping to keep trees healthy and clear of structures.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🪵</div>
+        <h3>Hedge &amp; Shrub Trimming</h3>
+        <p>Overgrown hedges and shrubs trimmed back and cleaned up properly.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🧹</div>
+        <h3>Full Cleanup</h3>
+        <p>Every job finished with a full cleanup — lawn, driveway, and deck included.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📋</div>
+        <h3>Free Quotes</h3>
+        <p>On-site assessment and an honest quote, with no pressure to decide on the spot.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏡</div>
+        <h3>Residential &amp; Strata</h3>
+        <p>Experience working with homeowners and strata properties alike.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="eyebrow" style="color:var(--orange);">Why Mission calls Vince</div>
+      <h2>Careful work, honest quotes</h2>
+      <p>Customers describe the same thing again and again: Vince and his crew show up, do difficult work carefully around homes and power lines, and leave the property cleaner than they found it.</p>
+      <p>A 5.0-star rating across 122 reviews, with quotes honored months later and repeat customers for ongoing maintenance, speaks for itself.</p>
+    </div>
+    <ul class="checklist">
+      <li><span class="tick">✓</span> ISA Certified Arborist on staff</li>
+      <li><span class="tick">✓</span> Careful removal near homes and power lines</li>
+      <li><span class="tick">✓</span> Full cleanup — lawn, driveway, and deck</li>
+      <li><span class="tick">✓</span> Free on-site quotes, honored over time</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">What customers say</div>
+      <h2>5.0 stars, 122 Google reviews</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"We had a very large maple tree that was dying and leaning towards our home and they removed it extremely proficiently. After all trees had been cut back, they cleaned up everything beautifully."</p>
+        <div class="review-attr">— Google review</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"So pleased with the job that Vince and his crew did for us. Great with our schedule, friendly, knowledgeable, and worked so hard on the hottest day of the year. Before and after photos show the amazing transformation."</p>
+        <div class="review-attr">— Google review</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Vince honoured the quote he gave me back in October even though it was 10 months later that I finally worked up the courage to take the huge tree out. No lawn damage during the felling process — they cleaned up the lawn, driveway, and deck."</p>
+        <div class="review-attr">— Google review</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"We just had Arsenault Tree Service come to do our big cedar hedges on both sides of our yard. On time, did a fantastic job, made sure we were all on the same page as to our wants and cleaned up perfectly."</p>
+        <div class="review-attr">— Google review</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section areas">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Service Area</div>
+      <h2>Serving Mission &amp; the Fraser Valley</h2>
+    </div>
+    <div class="area-chips">
+      <span class="chip">Mission</span>
+      <span class="chip">Fraser Valley</span>
+    </div>
+    <p class="areas-note">Exact service area to be confirmed — ask before presenting to the owner.</p>
+  </div>
+</section>
+
+<section class="cta-band" id="contact">
+  <div class="wrap">
+    <h2>Have a tree that needs attention?</h2>
+    <p>Call now for a free, honest quote — Vince's crew will take it from there.</p>
+    <a class="btn-dark" href="tel:6048208842">Call (604) 820-8842</a>
+  </div>
+</section>
+
+<section class="section" id="privacy">
+  <div class="wrap">
+    <h2>Privacy Policy</h2>
+    <p>Placeholder text — a BC PIPA-compliant policy written for your business is included when the site is built.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="logo.webp" alt="Arsenault Tree Service" height="28">
+        <p style="font-size:14.5px;color:#aaa;max-width:280px;">Professional arborist services for Mission &amp; the Fraser Valley.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:6048208842">(604) 820-8842</a>
+        <a href="mailto:info@arsenaulttreeservice.com">info@arsenaulttreeservice.com</a>
+        <a href="#">33746 Best Ave, Mission, BC V2V 6Z9</a>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#privacy">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Arsenault Tree Service</span>
+      <span>Design preview by Sharpline Digital</span>
+    </div>
+  </div>
+</footer>
+
+<div class="call-bar">
+  <a href="tel:6048208842">Call (604) 820-8842</a>
+</div>
+
+</body>
+</html>
