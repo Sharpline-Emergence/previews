@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Capstone Gutter Cleaning — Gutter, Roof &amp; Exterior Cleaning in Coquitlam</title>
+<style>
+  :root{
+    --ink:#1C1C1C;
+    --ink2:#2B2B2B;
+    --orange:#F6953A;
+    --orange2:#DB7E22;
+    --cream:#FAFAF8;
+    --sub:#5B5B5B;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.55;
+  }
+  img{display:block;max-width:100%;}
+  a{color:inherit;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+
+  .disclaimer{
+    background:#fff6d8;color:#5c4a00;font-size:13px;text-align:center;
+    padding:10px 16px;border-bottom:1px solid #f0dca0;
+  }
+
+  header{
+    background:#fff;position:sticky;top:0;z-index:40;
+    border-bottom:1px solid #eee;
+  }
+  .header-inner{
+    max-width:1120px;margin:0 auto;padding:14px 24px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .logo-img{height:42px;width:auto;}
+  .call-btn{
+    background:var(--orange);color:#fff;font-weight:700;
+    padding:10px 18px;border-radius:8px;text-decoration:none;font-size:15px;
+    white-space:nowrap;
+  }
+
+  .hero{
+    background:
+      radial-gradient(circle at 12% 15%, rgba(246,149,58,.14), transparent 40%),
+      radial-gradient(circle at 88% 85%, rgba(246,149,58,.12), transparent 45%),
+      var(--ink);
+    color:#fff;padding:72px 0 64px;position:relative;overflow:hidden;
+  }
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    background:rgba(246,149,58,.15);border:1px solid rgba(246,149,58,.4);
+    color:var(--orange);font-weight:700;font-size:13.5px;
+    padding:7px 14px;border-radius:999px;margin-bottom:22px;
+  }
+  .hero h1{font-size:46px;line-height:1.1;font-weight:800;max-width:720px;margin-bottom:18px;}
+  .hero h1 span{color:var(--orange);}
+  .hero p.lead{font-size:18px;color:#cfcfcf;max-width:560px;margin-bottom:30px;}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--orange);color:#fff;font-weight:700;
+    padding:14px 26px;border-radius:9px;text-decoration:none;font-size:16px;
+  }
+  .btn-secondary{
+    background:transparent;color:#fff;font-weight:600;
+    padding:14px 26px;border-radius:9px;text-decoration:none;font-size:16px;
+    border:1px solid rgba(255,255,255,.3);
+  }
+  .hero-stats{display:flex;gap:36px;margin-top:48px;flex-wrap:wrap;}
+  .hero-stat b{display:block;font-size:28px;color:#fff;}
+  .hero-stat span{font-size:13.5px;color:#aaa;}
+
+  .trust{background:#fff;border-bottom:1px solid #eee;padding:22px 0;}
+  .trust .wrap{display:flex;gap:40px;flex-wrap:wrap;align-items:center;justify-content:center;text-align:center;}
+  .trust-item{font-size:14.5px;color:var(--sub);font-weight:600;}
+  .trust-item b{color:var(--ink);}
+
+  .section{padding:68px 0;}
+  .section-head{text-align:center;max-width:620px;margin:0 auto 44px;}
+  .eyebrow{color:var(--orange2);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}
+  .section-head h2{font-size:32px;font-weight:800;color:var(--ink);}
+  .section-head p{color:var(--sub);margin-top:12px;font-size:16px;}
+
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .service-card{background:#fff;border:1px solid #ececec;border-radius:14px;padding:28px 24px;}
+  .service-icon{
+    width:46px;height:46px;border-radius:10px;background:rgba(246,149,58,.14);
+    display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:22px;
+  }
+  .service-card h3{font-size:18px;font-weight:700;margin-bottom:8px;color:var(--ink);}
+  .service-card p{font-size:14.5px;color:var(--sub);}
+
+  .about{background:var(--ink);color:#fff;}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+  .about h2{font-size:30px;font-weight:800;margin-bottom:18px;}
+  .about p{color:#c9c9c9;font-size:16px;margin-bottom:16px;}
+  .checklist{list-style:none;}
+  .checklist li{
+    display:flex;gap:12px;padding:14px 0;border-top:1px solid rgba(255,255,255,.1);
+    font-size:15.5px;color:#e2e2e2;
+  }
+  .checklist li:first-child{border-top:none;}
+  .checklist .tick{
+    width:22px;height:22px;flex:none;border-radius:50%;background:var(--orange);
+    color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;
+  }
+
+  .reviews-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  .review-card{background:#fff;border:1px solid #ececec;border-radius:14px;padding:26px;}
+  .stars{color:var(--orange2);font-size:15px;margin-bottom:12px;letter-spacing:2px;}
+  .review-card p{font-size:15px;color:var(--ink);margin-bottom:14px;}
+  .review-attr{font-size:13.5px;color:var(--sub);font-weight:600;}
+
+  .areas{background:#fff;}
+  .area-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+  .chip{
+    background:#f3f1ea;color:var(--ink);font-size:14px;font-weight:600;
+    padding:9px 18px;border-radius:999px;border:1px solid #e7e3d6;
+  }
+  .areas-note{text-align:center;color:var(--sub);font-size:13.5px;margin-top:18px;}
+
+  .cta-band{background:var(--orange);color:#fff;text-align:center;padding:56px 0;}
+  .cta-band h2{font-size:30px;font-weight:800;margin-bottom:14px;}
+  .cta-band p{font-size:16px;margin-bottom:26px;opacity:.92;}
+  .btn-dark{
+    background:var(--ink);color:#fff;font-weight:700;padding:15px 30px;
+    border-radius:9px;text-decoration:none;font-size:16px;display:inline-block;
+  }
+
+  #privacy{background:#fff;border-top:1px solid #eee;}
+  #privacy h2{font-size:24px;font-weight:800;color:var(--ink);margin-bottom:16px;}
+  #privacy p{color:var(--sub);font-size:14.5px;margin-bottom:12px;max-width:760px;}
+
+  footer{background:var(--ink);color:#aaa;padding:48px 0 100px;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:32px;}
+  .footer-logo{height:34px;margin-bottom:14px;filter:brightness(0) invert(1);}
+  footer h4{color:#fff;font-size:14px;font-weight:700;margin-bottom:14px;}
+  footer a{display:block;color:#aaa;text-decoration:none;font-size:14.5px;margin-bottom:10px;}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+
+  .call-bar{
+    position:fixed;bottom:0;left:0;right:0;background:var(--ink);
+    padding:12px 18px;display:none;z-index:50;box-shadow:0 -4px 16px rgba(0,0,0,.2);
+  }
+  .call-bar a{
+    display:block;background:var(--orange);color:#fff;text-align:center;
+    font-weight:700;padding:13px;border-radius:9px;text-decoration:none;font-size:16px;
+  }
+
+  @media(max-width:860px){
+    .hero h1{font-size:34px;}
+    .about-grid{grid-template-columns:1fr;}
+    .services-grid{grid-template-columns:1fr 1fr;}
+    .reviews-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr;}
+  }
+  @media(max-width:600px){
+    .services-grid{grid-template-columns:1fr;}
+    .hero-stats{gap:26px;}
+    .call-bar{display:block;}
+    body{padding-bottom:70px;}
+  }
+  @media(max-width:400px){
+    .header-inner{padding:12px 16px;gap:10px;}
+    .logo-img{height:34px;}
+    .call-btn{padding:9px 14px;font-size:13.5px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclaimer">Design preview prepared for Capstone Gutter Cleaning by Sharpline Digital — not a live website. Photos pending from the owner; wording and details to be confirmed.</div>
+
+<header>
+  <div class="header-inner">
+    <img class="logo-img" src="logo.webp" alt="Capstone Gutter Cleaning logo" width="160" height="52">
+    <a class="call-btn" href="tel:7789873332">Call (778) 987-3332</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-badge">★★★★★ 5.0 rating · 116 Google reviews</div>
+    <h1>Gutters, roofs &amp; windows <span>spotless</span> — done right by Nathan</h1>
+    <p class="lead">Gutter cleaning, roof moss removal, and exterior washing for Coquitlam &amp; the Tri-Cities — the crew your neighbours keep calling back.</p>
+    <div class="hero-ctas">
+      <a class="btn-primary" href="tel:7789873332">Call (778) 987-3332</a>
+      <a class="btn-secondary" href="#contact">Get a free quote</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><b>5.0★</b><span>116 Google reviews</span></div>
+      <div class="hero-stat"><b>Coquitlam</b><span>Locally based</span></div>
+      <div class="hero-stat"><b>Years</b><span>of repeat customers</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-item"><b>5.0★ rating</b> — 116 Google reviews</div>
+    <div class="trust-item"><b>Locally based</b> in Coquitlam, BC</div>
+    <div class="trust-item"><b>Repeat customers</b> year after year</div>
+  </div>
+</div>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">What we do</div>
+      <h2>Exterior cleaning for Coquitlam &amp; the Tri-Cities</h2>
+      <p>Careful, thorough work that leaves no mess behind — from gutters to roofs to patios.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <h3>Gutter Cleaning</h3>
+        <p>Full gutter clear-outs with debris removed from the ground, not left scattered on your lawn.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🧹</div>
+        <h3>Roof Moss Removal</h3>
+        <p>Careful moss removal, including tile and specialty roofs that need extra care when walked on.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🪟</div>
+        <h3>Exterior Window Washing</h3>
+        <p>Streak-free window cleaning as part of a full exterior refresh.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💧</div>
+        <h3>Patio &amp; Concrete Cleaning</h3>
+        <p>Pressure washing for patios and concrete surfaces, restoring them to like-new condition.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Gutter Membrane Repair</h3>
+        <p>Seam and membrane repairs to stop leaks before they cause bigger problems.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">✅</div>
+        <h3>Ongoing Maintenance</h3>
+        <p>Many customers have Nathan back year after year for regular upkeep.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="eyebrow" style="color:var(--orange);">Why customers keep calling Nathan back</div>
+      <h2>The same crew, year after year</h2>
+      <p>Customers describe the same thing again and again: Nathan is responsive, careful with their property, and leaves the job spotless — including cleaning up every bit of debris before he leaves.</p>
+      <p>A 5.0-star rating across 116 reviews, many from repeat customers over several years, speaks for itself.</p>
+    </div>
+    <ul class="checklist">
+      <li><span class="tick">✓</span> Responsive quotes and easy scheduling</li>
+      <li><span class="tick">✓</span> Cleans up debris from the ground, not just the gutters</li>
+      <li><span class="tick">✓</span> Careful with delicate surfaces like tile roofs</li>
+      <li><span class="tick">✓</span> Trusted by repeat customers for years</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">What customers say</div>
+      <h2>5.0 stars, 116 Google reviews</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Communication with Nathan in getting a quote and setting up an appointment was quick and easy. The crew arrived on time and did a great job — they even cleaned up debris that had fallen to the ground. Fantastic company, would recommend to anyone."</p>
+        <div class="review-attr">— Google review</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Nathan cleaned our gutters, exterior windows and concrete patio, and did a fantastic job! He was prompt, and arrived well equipped. Our patio is so clean now it's almost sparkling!"</p>
+        <div class="review-attr">— Google review</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"I have a tile roof that requires a bit of care when walking on them. Nathan and his excellent crew have taken care and are respectful of my requests. I would recommend him to anyone!"</p>
+        <div class="review-attr">— Google review</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"I have used Capstone Gutter a number of times and have been incredibly happy with the results. They do an excellent job and leave no mess. Highly recommend."</p>
+        <div class="review-attr">— Google review</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section areas">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Service Area</div>
+      <h2>Serving Coquitlam &amp; the Tri-Cities</h2>
+    </div>
+    <div class="area-chips">
+      <span class="chip">Coquitlam</span>
+      <span class="chip">Port Coquitlam</span>
+      <span class="chip">Port Moody</span>
+    </div>
+    <p class="areas-note">Exact service area to be confirmed — ask before presenting to the owner.</p>
+  </div>
+</section>
+
+<section class="cta-band" id="contact">
+  <div class="wrap">
+    <h2>Need your gutters cleaned?</h2>
+    <p>Call now or request a free quote — Nathan's crew will take it from there.</p>
+    <a class="btn-dark" href="tel:7789873332">Call (778) 987-3332</a>
+  </div>
+</section>
+
+<section class="section" id="privacy">
+  <div class="wrap">
+    <h2>Privacy Policy</h2>
+    <p>Placeholder text — a BC PIPA-compliant policy written for your business is included when the site is built.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="logo.webp" alt="Capstone Gutter Cleaning" height="34">
+        <p style="font-size:14.5px;color:#aaa;max-width:280px;">Gutter, roof &amp; exterior cleaning for Coquitlam &amp; the Tri-Cities.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:7789873332">(778) 987-3332</a>
+        <a href="mailto:capstonegutters@gmail.com">capstonegutters@gmail.com</a>
+        <a href="#">3423 Gislason Ave, Coquitlam, BC V3E 0C6</a>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#privacy">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Capstone Gutter Cleaning</span>
+      <span>Design preview by Sharpline Digital</span>
+    </div>
+  </div>
+</footer>
+
+<div class="call-bar">
+  <a href="tel:7789873332">Call (778) 987-3332</a>
+</div>
+
+</body>
+</html>
