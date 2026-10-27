@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<link rel="preload" as="image" href="shop-hero.webp" imagesrcset="shop-hero-420.webp 420w, shop-hero.webp 560w" imagesizes="(max-width: 620px) 92vw, 440px" fetchpriority="high">
+<title>Outlaw Industries — Custom Fabrication &amp; Mobile Welding, Chilliwack (Preview)</title>
+<meta name="description" content="Custom metal fabrication, structural and pipe welding, and on-site repairs from Chilliwack. Owner-operated by brothers Justin and Jaren Jansen. 5.0 stars on Google.">
+<style>
+  :root {
+    --char: #1b1c1e;
+    --char-2: #26282b;
+    --copper: #c27a3a;
+    --copper-dk: #9c5d27;
+    --copper-lt: #e8b98a;
+    --paper: #f7f5f2;
+    --sand: #efebe5;
+    --ink: #1b1c1e;
+    --muted: #5e6166;
+    --line: #e2ddd5;
+    --radius: 10px;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 var(--sans); }
+  h1, h2, h3 { font-weight: 800; line-height: 1.12; margin: 0 0 .5em; letter-spacing: -.01em; }
+  a { color: inherit; }
+  img { max-width: 100%; display: block; height: auto; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+  .preview-bar { background: #fff4d6; color: #5a4300; border-bottom: 1px solid #efd99a; font-size: 13.5px; text-align: center; padding: 8px 16px; }
+  .topline { background: #111214; color: #c9c4bc; font-size: 14px; text-align: center; padding: 7px 16px; }
+  .topline a { color: #fff; font-weight: 600; text-decoration: none; }
+
+  header.site { background: var(--char); position: sticky; top: 0; z-index: 20; border-bottom: 1px solid #000; }
+  header.site .wrap { display: flex; align-items: center; justify-content: space-between; height: 76px; gap: 16px; }
+  .brand img { width: 120px; height: 56px; }
+  nav.main { display: flex; gap: 26px; font-size: 15px; }
+  nav.main a { text-decoration: none; color: #ddd8d0; }
+  nav.main a:hover { color: var(--copper-lt); }
+  .btn { display: inline-flex; align-items: center; gap: 8px; justify-content: center; border-radius: 6px; padding: 13px 22px;
+    font-weight: 700; text-decoration: none; border: 2px solid transparent; font-size: 15.5px; white-space: nowrap; transition: background .15s, border-color .15s; }
+  .btn svg { width: 18px; height: 18px; }
+  .btn-copper { background: var(--copper); color: #fff; }
+  .btn-copper:hover { background: var(--copper-dk); }
+  .btn-ghost { border-color: rgba(255,255,255,.45); color: #fff; }
+  .btn-ghost:hover { border-color: #fff; }
+
+  .hero { background: linear-gradient(180deg, var(--char) 0%, var(--char-2) 100%); color: #fff; padding: 60px 0 84px; }
+  .hero .wrap { display: grid; grid-template-columns: 1.15fr .85fr; gap: 48px; align-items: center; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--copper-lt); margin-bottom: 16px; font-weight: 600; }
+  .stars { color: #f0b93e; letter-spacing: 1px; }
+  .hero h1 { font-size: clamp(34px, 5vw, 54px); }
+  .hero h1 span { color: var(--copper-lt); }
+  .lede { font-size: 18px; color: #cfccc6; max-width: 33em; margin: 0 0 28px; }
+  .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+  .hero-art { position: relative; }
+  .hero-photo { width: 100%; max-width: 440px; margin-left: auto; border-radius: 10px; box-shadow: 0 30px 60px rgba(0,0,0,.45); }
+  .badge { position: absolute; left: 6%; bottom: -24px; background: #fff; color: var(--ink); border-radius: 10px; padding: 14px 18px; box-shadow: 0 16px 40px rgba(0,0,0,.35); display: grid; gap: 2px; }
+  .badge b { font-size: 17px; }
+  .badge span:last-child { font-size: 13.5px; color: var(--muted); }
+
+  .trust { background: #fff; border-bottom: 1px solid var(--line); }
+  .trust .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .trust-item { padding: 22px 16px; text-align: center; border-right: 1px solid var(--line); }
+  .trust-item:last-child { border-right: 0; }
+  .trust-item b { display: block; font-size: 22px; font-weight: 800; }
+  .trust-item span { font-size: 14px; color: var(--muted); }
+
+  section { padding: 76px 0; }
+  .section-head { max-width: 680px; margin-bottom: 36px; }
+  .section-head h2 { font-size: clamp(28px, 3.4vw, 40px); }
+  .section-head p { color: var(--muted); font-size: 17px; margin: 0; }
+  .kicker { font-size: 13px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: var(--copper-dk); margin-bottom: 10px; }
+
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 26px 24px; border-top: 3px solid var(--copper); }
+  .card .icon { width: 44px; height: 44px; border-radius: 10px; background: var(--sand); display: grid; place-items: center; margin-bottom: 14px; color: var(--copper-dk); }
+  .card .icon svg { width: 24px; height: 24px; }
+  .card h3 { font-size: 18px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+
+  .work { background: var(--sand); }
+  .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .work-grid figure { margin: 0; }
+  .work-grid img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); }
+  .work-grid figcaption { font-size: 14.5px; color: var(--muted); margin-top: 8px; }
+
+  .story { background: var(--char); color: #fff; }
+  .story .wrap { display: grid; grid-template-columns: .8fr 1.2fr; gap: 52px; align-items: center; }
+  .story img { width: 100%; max-width: 420px; border-radius: var(--radius); }
+  .story h2 { font-size: clamp(28px, 3.4vw, 40px); }
+  .story p { color: #cfccc6; font-size: 17px; margin: 0 0 14px; }
+  .story .kicker { color: var(--copper-lt); }
+  .facts { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; padding: 0; list-style: none; }
+  .facts li { border: 1px solid rgba(255,255,255,.22); border-radius: 999px; padding: 6px 14px; font-size: 14.5px; color: #e9e5de; }
+
+  .process { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; counter-reset: step; }
+  .step { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 22px; }
+  .step::before { counter-increment: step; content: counter(step); display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%;
+    background: var(--copper); color: #fff; font-weight: 800; margin-bottom: 14px; }
+  .step h3 { font-size: 17px; }
+  .step p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  .reviews { background: #fff; border-top: 1px solid var(--line); }
+  .reviews-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  blockquote { margin: 0; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+  blockquote p { margin: 10px 0 12px; font-size: 16.5px; }
+  blockquote footer { font-size: 14px; color: var(--muted); font-weight: 600; }
+
+  .contact { background: var(--char); color: #fff; }
+  .contact .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+  .contact h2 { font-size: clamp(28px, 3.4vw, 40px); }
+  .contact p { color: #cfccc6; font-size: 17px; }
+  .contact .kicker { color: var(--copper-lt); }
+  .area-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; padding: 0; list-style: none; }
+  .area-list li { border: 1px solid rgba(255,255,255,.25); border-radius: 999px; padding: 6px 14px; font-size: 14.5px; }
+  .contact-card { background: #fff; color: var(--ink); border-radius: var(--radius); padding: 30px; }
+  .contact-card h3 { font-size: 21px; }
+  .contact-line { display: flex; gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid var(--line); }
+  .contact-line:first-of-type { border-top: 0; }
+  .contact-line svg { width: 20px; height: 20px; color: var(--copper-dk); flex: none; }
+  .contact-line a { text-decoration: none; font-weight: 600; }
+  .contact-card .btn { margin-top: 18px; width: 100%; }
+  .privacy-note { font-size: 14px; color: var(--muted); margin: 14px 0 0; }
+  .privacy-note a { color: var(--copper-dk); }
+
+  .privacy { background: #fff; border-top: 1px solid var(--line); }
+  .privacy .wrap { max-width: 820px; }
+  .privacy h2 { font-size: clamp(24px, 3vw, 30px); }
+  .privacy h3 { font-size: 17px; margin-top: 26px; }
+  .privacy p { color: var(--muted); font-size: 15.5px; }
+  .placeholder { background: #fff4d6; border: 1px solid #efd99a; color: #5a4300; border-radius: 8px; padding: 10px 14px; font-size: 14.5px; }
+
+  footer.site { background: #111214; color: #9a978f; font-size: 14px; padding: 28px 0 90px; }
+  footer.site .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  footer.site a { color: #e2ddd5; }
+
+  .call-bar { display: none; }
+
+  @media (max-width: 900px) {
+    nav.main { display: none; }
+    .hero .wrap, .story .wrap, .contact .wrap { grid-template-columns: 1fr; }
+    .hero { padding: 44px 0 64px; }
+    .hero-art { max-width: 440px; margin: 0 auto; width: 100%; }
+    .services-grid, .process { grid-template-columns: 1fr 1fr; }
+    .trust .wrap { grid-template-columns: 1fr 1fr; }
+    .trust-item:nth-child(2) { border-right: 0; }
+    .trust-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+    .story img { max-width: 360px; }
+  }
+  @media (max-width: 620px) {
+    header.site .btn { display: none; }
+    header.site .wrap { height: 66px; }
+    .brand img { width: 103px; height: 48px; }
+    .services-grid, .reviews-grid, .process, .work-grid { grid-template-columns: 1fr; }
+    .work-grid img { aspect-ratio: 1 / 1; }
+    section { padding: 56px 0; }
+    .call-bar { display: flex; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 30; gap: 10px; }
+    .call-bar .btn { flex: 1; box-shadow: 0 8px 24px rgba(0,0,0,.3); padding: 13px 12px; }
+    .call-bar .btn-dark { background: var(--char); color: #fff; }
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar">
+  <strong>Design preview</strong> prepared for Outlaw Industries by Sharpline Digital — not a live website. Photos are from Outlaw Industries’ own Instagram; wording and details to be confirmed with the owners.
+</div>
+<div class="topline">Mobile welding &amp; on-site repairs across the Fraser Valley — call <a href="tel:+16043788542">604-378-8542</a></div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Outlaw Industries home"><img src="logo.webp" width="300" height="140" alt="Outlaw Industries"></a>
+    <nav class="main" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#story">About us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-copper" href="#contact">Get a quote</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow"><span class="stars" aria-hidden="true">★★★★★</span> 5.0 on Google · 76 reviews</div>
+        <h1 id="hero-title">Custom fabrication and welding, <span>built right in Chilliwack.</span></h1>
+        <p class="lede">Railings, gates, truck decks, structural steel and on-site repairs — built by brothers Justin and Jaren Jansen and their crew for homes, farms and job sites across the Fraser Valley.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-copper" href="#contact">Get a quote</a>
+          <a class="btn btn-ghost" href="tel:+16043788542">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            604-378-8542
+          </a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img class="hero-photo" src="shop-hero.webp" srcset="shop-hero-420.webp 420w, shop-hero.webp 560w" sizes="(max-width: 620px) 92vw, 440px"
+             width="560" height="678" fetchpriority="high" decoding="async" alt="Outlaw Industries fabricator cutting square steel tube on a band saw in the Chilliwack shop">
+        <div class="badge"><span class="stars" aria-hidden="true">★★★★★</span><b>5.0 on Google</b><span>76 local reviews</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div class="wrap">
+      <div class="trust-item"><b>5.0 ★</b><span>76 Google reviews</span></div>
+      <div class="trust-item"><b>10 years</b><span>welding in the Valley</span></div>
+      <div class="trust-item"><b>1,200+</b><span>service calls completed</span></div>
+      <div class="trust-item"><b>Shop + mobile</b><span>we come to your site</span></div>
+    </div>
+  </div>
+
+  <section id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">What we do</div>
+        <h2 id="services-title">From one-off repairs to full structural installs</h2>
+        <p>Built in our Camp River Road shop, or welded on site wherever the job is.</p>
+      </div>
+      <div class="services-grid">
+        <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V8M10 20V8M16 20V8M22 20V8M2 8h22M2 20h22"/></svg></div>
+          <h3>Custom fabrication</h3><p>Railings, stairs, gates, fire pits, signs and one-off pieces — CNC plasma-cut and built to fit.</p></div>
+        <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></div>
+          <h3>Mobile &amp; emergency repairs</h3><p>Trailers, equipment and broken welds fixed on site — fast, so you can get back to work.</p></div>
+        <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 21V5h4v16M16 21V5h4v16M8 9h8M8 15h8"/></svg></div>
+          <h3>Structural welding</h3><p>Beams, columns, frames, seismic reinforcement and field welding — built to spec and to code.</p></div>
+        <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9h10a4 4 0 0 1 4 4v8M3 13h8a2 2 0 0 1 2 2v6M3 7v8"/></svg></div>
+          <h3>Pipe welding</h3><p>Boilers, tanks, process lines, stainless pipe and tie-ins for industrial clients.</p></div>
+        <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="9" width="15" height="7" rx="1"/><path d="M17 11h3l2 3v2h-5M6 19a2 2 0 1 0 0-.1M17 19a2 2 0 1 0 0-.1"/></svg></div>
+          <h3>Truck decks &amp; trailers</h3><p>Custom decks, ramps, racks and modifications — built strong and safe to load.</p></div>
+        <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 21V10l9-6 9 6v11M9 21v-7h6v7"/></svg></div>
+          <h3>Farm &amp; agricultural</h3><p>Barn hardware, sliding and Dutch doors, feeders, gates and repairs for Fraser Valley farms.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Our work</div>
+        <h2 id="work-title">Real projects, built by our crew</h2>
+        <p>A few recent jobs from our own crew.</p>
+      </div>
+      <div class="work-grid">
+        <figure><img style="object-position:left center" src="railing.webp" width="496" height="778" loading="lazy" decoding="async" alt="Black steel vertical-bar railing at the top of an interior staircase"><figcaption>Modern steel railing for a home entry.</figcaption></figure>
+        <figure><img src="gate.webp" width="580" height="550" loading="lazy" decoding="async" alt="Black metal fence panels and pillars at a rural driveway entrance with mountains behind"><figcaption>Driveway entrance fencing in the Valley.</figcaption></figure>
+        <figure><img style="object-position:center top" src="bench.webp" width="578" height="778" loading="lazy" decoding="async" alt="Outlaw Industries welder working at a steel bench in the shop"><figcaption>In the shop on Camp River Road.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="story" class="story" aria-labelledby="story-title">
+    <div class="wrap">
+      <img src="crew.webp" width="584" height="706" loading="lazy" decoding="async" alt="Outlaw Industries welder lifting his welding helmet in the shop">
+      <div>
+        <div class="kicker">About us</div>
+        <h2 id="story-title">Two brothers who grew up building things.</h2>
+        <p>Justin and Jaren Jansen were born and raised in Chilliwack. As kids they spent countless hours designing and building tree forts, go-carts and motorbikes — and that passion turned into a trade.</p>
+        <p>Outlaw is a small, tight-knit shop. When you hire us, the owners themselves work on your project, and we’re proud to support local apprentices and Red Seal development.</p>
+        <ul class="facts"><li>Owner-operated</li><li>Born &amp; raised in Chilliwack</li><li>520,000+ sq ft of steelwork</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="process-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">How it works</div>
+        <h2 id="process-title">Simple from first call to final weld</h2>
+      </div>
+      <div class="process">
+        <div class="step"><h3>Call or send photos</h3><p>Tell us what you need — a quick photo of the job helps us quote fast.</p></div>
+        <div class="step"><h3>A straight quote</h3><p>Clear pricing and honest advice on the best way to build it.</p></div>
+        <div class="step"><h3>Built in shop or on site</h3><p>Fabricated in our shop, or welded on site with our mobile rig.</p></div>
+        <div class="step"><h3>Installed &amp; done right</h3><p>Finished, installed and checked — built to last.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Reviews</div>
+        <h2 id="reviews-title">5.0 stars from 76 Fraser Valley customers</h2>
+      </div>
+      <div class="reviews-grid">
+        <blockquote><span class="stars" aria-label="5 stars">★★★★★</span>
+          <p>“I can’t say enough about the professionalism and craftsmanship from Justin and his team at Outlaw Industries… every detail was thought through and executed with care.”</p><footer>Google review</footer></blockquote>
+        <blockquote><span class="stars" aria-label="5 stars">★★★★★</span>
+          <p>“I’ve had Outlaw build a custom hot tub cover, interior railings and now a custom aluminum canopy… They are my absolute go-to for fabrication.”</p><footer>Google review</footer></blockquote>
+        <blockquote><span class="stars" aria-label="5 stars">★★★★★</span>
+          <p>“They took three single ramps which were dangerous to ride the bikes up onto the trailer and created one ramp… Works fantastic and so much safer.”</p><footer>Google review</footer></blockquote>
+        <blockquote><span class="stars" aria-label="5 stars">★★★★★</span>
+          <p>“They outfitted a hobby barn we built recently with all the hardware including sliding doors, Dutch doors, grain and hay feeders and more!”</p><footer>Google review</footer></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div>
+        <div class="kicker">Service area</div>
+        <h2 id="contact-title">Based in Chilliwack, working across BC</h2>
+        <p>Shop work from Camp River Road, mobile welding throughout the Fraser Valley and Greater Vancouver, and remote projects across BC.</p>
+        <ul class="area-list"><li>Chilliwack</li><li>Abbotsford</li><li>Mission</li><li>Langley</li><li>Hope</li><li>Greater Vancouver</li><li>Remote BC projects</li></ul>
+      </div>
+      <div class="contact-card">
+        <h3>Get a quote</h3>
+        <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+16043788542">604-378-8542</a></div>
+        <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:sales@outlawindustries.ca">sales@outlawindustries.ca</a></div>
+        <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Monday – Friday, 8:00 am – 5:00 pm</span></div>
+        <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>48620 Camp River Rd, Chilliwack</span></div>
+        <a class="btn btn-copper" href="tel:+16043788542">Call now</a>
+        <p class="privacy-note">We only use your contact details to reply to you. <a href="#privacy">Privacy policy</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy" class="privacy" aria-labelledby="privacy-title">
+    <div class="wrap">
+      <div class="kicker">Your privacy</div>
+      <h2 id="privacy-title">Privacy policy</h2>
+      <p class="placeholder">Placeholder text — a BC PIPA-compliant policy written for your business is included when the site is built.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h3>What we collect</h3>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+      <h3>Your rights</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© Outlaw Industries Ltd. · Chilliwack, BC · <a href="#privacy">Privacy policy</a></span>
+    <span>Preview designed by <a href="https://sharplinedigital.com" rel="nofollow">Sharpline Digital</a></span>
+  </div>
+</footer>
+
+<div class="call-bar">
+  <a class="btn btn-copper" href="tel:+16043788542">Call 604-378-8542</a>
+  <a class="btn btn-dark" href="#contact">Get a quote</a>
+</div>
+
+</body>
+</html>
