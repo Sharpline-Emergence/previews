@@ -202,9 +202,13 @@
     .call-bar .btn { flex: 1; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
     .call-bar .btn-dark { background: var(--navy); color: #fff; }
   }
+
+  .wm { position: fixed; inset: 0; z-index: 40; pointer-events: none; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='720' height='420'><text x='360' y='215' text-anchor='middle' transform='rotate(-30 360 210)' font-family='Arial,sans-serif' font-size='20' font-weight='700' letter-spacing='3' fill='%23808890' fill-opacity='0.22'>SHARPLINE DIGITAL · DESIGN PREVIEW</text></svg>"); background-size: 720px 420px; }
+  @media (max-width: 620px) { .wm { background-size: 480px 280px; } }
 </style>
 </head>
 <body>
+<div class="wm" aria-hidden="true"></div>
 
 <div class="preview-bar">
   <strong>Design preview</strong> prepared for JT’s Pressure Washing by Sharpline Digital — not a live website. Photos and logo are from JT’s Pressure Washing’s own site; wording and details to be confirmed with the owner.
